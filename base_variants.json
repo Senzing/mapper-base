@@ -1,0 +1,4837 @@
+{
+  "BAD_VALUES": {
+    "NULL": ""
+  },
+  "ATTRIBUTE_CATEGORIES": {
+    "DOB": [
+      "DATE_OF_BIRTH"
+    ],
+    "COUNTRY": [
+      "_COUNTRY",
+      "NATIONALITY",
+      "CITIZENSHIP",
+      "PLACE_OF_BIRTH"
+    ],
+    "STATE": [
+      "_STATE"
+    ],
+    "GROUP_NAME": [
+      "GROUP_ASSOCIATION_ORG_NAME",
+      "EMPLOYER"
+    ],
+    "GROUP_ID": [
+      "GROUP_ASSN_ID_NUMBER"
+    ]
+  },
+  "ORGANIZATION_TOKENS": {
+    "AND": "",
+    "THE": "",
+    "AG": "",
+    "SA": "",
+    "CO": "",
+    "LIMITED": "",
+    "LTD": "",
+    "INC": "",
+    "COMPANY": "",
+    "CORP": "",
+    "CORPORATION": "",
+    "CORPORATIONS": "",
+    "CORPORATE": "",
+    "GROUP": "",
+    "TRUSTEES": "TRUST",
+    "TRUSTEE": "TRUST",
+    "TRUST": "TRUST",
+    "NOMINEES": "",
+    "ASSETS": "",
+    "ENTERPRISES": "",
+    "WORLDWIDE": "",
+    "SERVICES": "",
+    "HOLDING": "",
+    "HOLDINGS": "",
+    "INVESTMENT": "",
+    "INVESTMENTS": "",
+    "INTERNATIONAL": "",
+    "FOUNDATION": "",
+    "FINANCE": "",
+    "BANK": "",
+    "PROPERTIES": ""
+  },
+  "PERSON_TOKENS": {
+    "MR": "",
+    "MRS": "",
+    "MS": "",
+    "MISS": "",
+    "DR": "",
+    "MD": "",
+    "PHD": ""
+  },
+  "STATE_CODES": {
+    "AA": "AA",
+    "AE": "AE",
+    "AK": "AK",
+    "AL": "AL",
+    "ALABAMA": "AL",
+    "ALASKA": "AK",
+    "AMERICAN SAMOA": "AS",
+    "AP": "AP",
+    "AR": "AR",
+    "ARIZONA": "AZ",
+    "ARKANSAS": "AR",
+    "ARMED FORCES AFRICA": "AE",
+    "ARMED FORCES AMERICAS": "AA",
+    "ARMED FORCES CANADA": "AE",
+    "ARMED FORCES EUROPE": "AE",
+    "ARMED FORCES MIDDLE EAST": "AE",
+    "ARMED FORCES PACIFIC": "AP",
+    "AS": "AS",
+    "AZ": "AZ",
+    "CA": "CA",
+    "CALIFORNIA": "CA",
+    "CO": "CO",
+    "COLORADO": "CO",
+    "CONNECTICUT": "CT",
+    "DC": "DC",
+    "DELAWARE": "DE",
+    "DISTRICT OF COLUMBIA": "DC",
+    "FEDERATED STATES OF MICRONESIA": "FM",
+    "FL": "FL",
+    "FLORIDA": "FL",
+    "FM": "FM",
+    "GA": "GA",
+    "GEORGIA": "GA",
+    "GU": "GU",
+    "GUAM": "GU",
+    "HAWAII": "HI",
+    "HI": "HI",
+    "IA": "IA",
+    "ID": "ID",
+    "IDAHO": "ID",
+    "IL": "IL",
+    "ILLINOIS": "IL",
+    "IN": "IN",
+    "INDIA": "IN",
+    "INDIANA": "IN",
+    "IOWA": "IA",
+    "KANSAS": "KS",
+    "KENTUCKY": "KY",
+    "KS": "KS",
+    "KY": "KY",
+    "LA": "LA",
+    "LOUISIANA": "LA",
+    "MA": "MA",
+    "MAINE": "ME",
+    "MARSHALL ISLANDS": "MH",
+    "MARYLAND": "MD",
+    "MASSACHUSETTS": "MA",
+    "MD": "MD",
+    "ME": "ME",
+    "MH": "MH",
+    "MI": "MI",
+    "MICHIGAN": "MI",
+    "MINNESOTA": "MN",
+    "MISSISSIPPI": "MS",
+    "MISSOURI": "MO",
+    "MN": "MN",
+    "MO": "MO",
+    "MONTANA": "MT",
+    "MP": "MP",
+    "MS": "MS",
+    "MT": "MT",
+    "NC": "NC",
+    "ND": "ND",
+    "NE": "NE",
+    "NEBRASKA": "NE",
+    "NEVADA": "NV",
+    "NEW HAMPSHIRE": "NH",
+    "NEW JERSEY": "NJ",
+    "NEW MEXICO": "NM",
+    "NEW YORK": "NY",
+    "NH": "NH",
+    "NJ": "NJ",
+    "NM": "NM",
+    "NORTH CAROLINA": "NC",
+    "NORTH DAKOTA": "ND",
+    "NORTHERN MARIANA ISLANDS": "MP",
+    "NV": "NV",
+    "NY": "NY",
+    "OH": "OH",
+    "OHIO": "OH",
+    "OK": "OK",
+    "OKLAHOMA": "OK",
+    "OR": "OR",
+    "OREGON": "OR",
+    "PA": "PA",
+    "PALAU": "PW",
+    "PENNSYLVANIA": "PA",
+    "PR": "PR",
+    "PUERTO RICO": "PR",
+    "PW": "PW",
+    "RHODE ISLAND": "RI",
+    "RI": "RI",
+    "SOUTH CAROLINA": "SC",
+    "SOUTH DAKOTA": "SD",
+    "TENNESSEE": "TN",
+    "TEXAS": "TX",
+    "TN": "TN",
+    "TX": "TX",
+    "USA": "US",
+    "UT": "UT",
+    "UTAH": "UT",
+    "VA": "VA",
+    "VERMONT": "VT",
+    "VI": "VI",
+    "VIRGIN ISLANDS": "VI",
+    "VIRGINIA": "VA",
+    "VT": "VT",
+    "WA": "WA",
+    "WASHINGTON": "WA",
+    "WEST VIRGINIA": "WV",
+    "WI": "WI",
+    "WISCONSIN": "WI",
+    "WV": "WV",
+    "WY": "WY",
+    "WYOMING": "WY"
+  },
+  "COUNTRY_CODES": {
+    "ABW": {
+      "ISO2": "AW",
+      "ISO3": "ABW"
+    },
+    "AD": {
+      "ISO2": "AD",
+      "ISO3": "AND"
+    },
+    "AE": {
+      "ISO2": "AE",
+      "ISO3": "ARE"
+    },
+    "AF": {
+      "ISO2": "AF",
+      "ISO3": "AFG"
+    },
+    "AFG": {
+      "ISO2": "AF",
+      "ISO3": "AFG"
+    },
+    "AFGHAN": {
+      "ISO2": "AF",
+      "ISO3": "AFG"
+    },
+    "AFGHANI": {
+      "ISO2": "AF",
+      "ISO3": "AFG"
+    },
+    "AFGHANISTAN": {
+      "ISO2": "AF",
+      "ISO3": "AFG"
+    },
+    "AG": {
+      "ISO2": "AG",
+      "ISO3": "ATG"
+    },
+    "AGO": {
+      "ISO2": "AO",
+      "ISO3": "AGO"
+    },
+    "AI": {
+      "ISO2": "AI",
+      "ISO3": "AIA"
+    },
+    "AIA": {
+      "ISO2": "AI",
+      "ISO3": "AIA"
+    },
+    "AL": {
+      "ISO2": "AL",
+      "ISO3": "ALB"
+    },
+    "ALA": {
+      "ISO2": "AX",
+      "ISO3": "ALA"
+    },
+    "ALB": {
+      "ISO2": "AL",
+      "ISO3": "ALB"
+    },
+    "ALBANIA": {
+      "ISO2": "AL",
+      "ISO3": "ALB"
+    },
+    "ALBANIAN": {
+      "ISO2": "AL",
+      "ISO3": "ALB"
+    },
+    "ALGERIA": {
+      "ISO2": "DZ",
+      "ISO3": "DZA"
+    },
+    "ALGERIAN": {
+      "ISO2": "DZ",
+      "ISO3": "DZA"
+    },
+    "AM": {
+      "ISO2": "AM",
+      "ISO3": "ARM"
+    },
+    "AMERICAN": {
+      "ISO2": "US",
+      "ISO3": "USA"
+    },
+    "AMERICAN SAMOA": {
+      "ISO2": "AS",
+      "ISO3": "ASM"
+    },
+    "AND": {
+      "ISO2": "AD",
+      "ISO3": "AND"
+    },
+    "ANDORRA": {
+      "ISO2": "AD",
+      "ISO3": "AND"
+    },
+    "ANDORRAN": {
+      "ISO2": "AD",
+      "ISO3": "AND"
+    },
+    "ANGOLA": {
+      "ISO2": "AO",
+      "ISO3": "AGO"
+    },
+    "ANGOLAN": {
+      "ISO2": "AO",
+      "ISO3": "AGO"
+    },
+    "ANGUILLA": {
+      "ISO2": "AI",
+      "ISO3": "AIA"
+    },
+    "ANTARCTICA": {
+      "ISO2": "AQ",
+      "ISO3": "ATA"
+    },
+    "ANTIGUA AND BARBUDA": {
+      "ISO2": "AG",
+      "ISO3": "ATG"
+    },
+    "ANTIGUANS": {
+      "ISO2": "AG",
+      "ISO3": "ATG"
+    },
+    "AO": {
+      "ISO2": "AO",
+      "ISO3": "AGO"
+    },
+    "AQ": {
+      "ISO2": "AQ",
+      "ISO3": "ATA"
+    },
+    "AR": {
+      "ISO2": "AR",
+      "ISO3": "ARG"
+    },
+    "ARAB REPUBLIC OF EGYPT": {
+      "ISO2": "EG",
+      "ISO3": "EGY"
+    },
+    "ARE": {
+      "ISO2": "AE",
+      "ISO3": "ARE"
+    },
+    "ARG": {
+      "ISO2": "AR",
+      "ISO3": "ARG"
+    },
+    "ARGENTINA": {
+      "ISO2": "AR",
+      "ISO3": "ARG"
+    },
+    "ARGENTINE REPUBLIC": {
+      "ISO2": "AR",
+      "ISO3": "ARG"
+    },
+    "ARGENTINEAN": {
+      "ISO2": "AR",
+      "ISO3": "ARG"
+    },
+    "ARM": {
+      "ISO2": "AM",
+      "ISO3": "ARM"
+    },
+    "ARMENIA": {
+      "ISO2": "AM",
+      "ISO3": "ARM"
+    },
+    "ARMENIAN": {
+      "ISO2": "AM",
+      "ISO3": "ARM"
+    },
+    "ARUBA": {
+      "ISO2": "AW",
+      "ISO3": "ABW"
+    },
+    "AS": {
+      "ISO2": "AS",
+      "ISO3": "ASM"
+    },
+    "ASM": {
+      "ISO2": "AS",
+      "ISO3": "ASM"
+    },
+    "AT": {
+      "ISO2": "AT",
+      "ISO3": "AUT"
+    },
+    "ATA": {
+      "ISO2": "AQ",
+      "ISO3": "ATA"
+    },
+    "ATF": {
+      "ISO2": "TF",
+      "ISO3": "ATF"
+    },
+    "ATG": {
+      "ISO2": "AG",
+      "ISO3": "ATG"
+    },
+    "AU": {
+      "ISO2": "AU",
+      "ISO3": "AUS"
+    },
+    "AUS": {
+      "ISO2": "AU",
+      "ISO3": "AUS"
+    },
+    "AUSTRALIA": {
+      "ISO2": "AU",
+      "ISO3": "AUS"
+    },
+    "AUSTRALIAN": {
+      "ISO2": "AU",
+      "ISO3": "AUS"
+    },
+    "AUSTRIA": {
+      "ISO2": "AT",
+      "ISO3": "AUT"
+    },
+    "AUSTRIAN": {
+      "ISO2": "AT",
+      "ISO3": "AUT"
+    },
+    "AUT": {
+      "ISO2": "AT",
+      "ISO3": "AUT"
+    },
+    "AW": {
+      "ISO2": "AW",
+      "ISO3": "ABW"
+    },
+    "AX": {
+      "ISO2": "AX",
+      "ISO3": "ALA"
+    },
+    "AZ": {
+      "ISO2": "AZ",
+      "ISO3": "AZE"
+    },
+    "AZE": {
+      "ISO2": "AZ",
+      "ISO3": "AZE"
+    },
+    "AZERBAIJAN": {
+      "ISO2": "AZ",
+      "ISO3": "AZE"
+    },
+    "AZERBAIJANI": {
+      "ISO2": "AZ",
+      "ISO3": "AZE"
+    },
+    "BA": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "BAHAMAS": {
+      "ISO2": "BS",
+      "ISO3": "BHS"
+    },
+    "BAHAMIAN": {
+      "ISO2": "BS",
+      "ISO3": "BHS"
+    },
+    "BAHRAIN": {
+      "ISO2": "BH",
+      "ISO3": "BHR"
+    },
+    "BAHRAINI": {
+      "ISO2": "BH",
+      "ISO3": "BHR"
+    },
+    "BANGLADESH": {
+      "ISO2": "BD",
+      "ISO3": "BGD"
+    },
+    "BANGLADESHI": {
+      "ISO2": "BD",
+      "ISO3": "BGD"
+    },
+    "BARBADIAN": {
+      "ISO2": "BB",
+      "ISO3": "BRB"
+    },
+    "BARBADOS": {
+      "ISO2": "BB",
+      "ISO3": "BRB"
+    },
+    "BARBUDANS": {
+      "ISO2": "AG",
+      "ISO3": "ATG"
+    },
+    "BATSWANA": {
+      "ISO2": "BW",
+      "ISO3": "BWA"
+    },
+    "BB": {
+      "ISO2": "BB",
+      "ISO3": "BRB"
+    },
+    "BD": {
+      "ISO2": "BD",
+      "ISO3": "BGD"
+    },
+    "BDI": {
+      "ISO2": "BI",
+      "ISO3": "BDI"
+    },
+    "BE": {
+      "ISO2": "BE",
+      "ISO3": "BEL"
+    },
+    "BEL": {
+      "ISO2": "BE",
+      "ISO3": "BEL"
+    },
+    "BELARUS": {
+      "ISO2": "BY",
+      "ISO3": "BLR"
+    },
+    "BELARUSIAN": {
+      "ISO2": "BY",
+      "ISO3": "BLR"
+    },
+    "BELGIAN": {
+      "ISO2": "BE",
+      "ISO3": "BEL"
+    },
+    "BELGIUM": {
+      "ISO2": "BE",
+      "ISO3": "BEL"
+    },
+    "BELIZE": {
+      "ISO2": "BZ",
+      "ISO3": "BLZ"
+    },
+    "BELIZEAN": {
+      "ISO2": "BZ",
+      "ISO3": "BLZ"
+    },
+    "BEN": {
+      "ISO2": "BJ",
+      "ISO3": "BEN"
+    },
+    "BENIN": {
+      "ISO2": "BJ",
+      "ISO3": "BEN"
+    },
+    "BENINESE": {
+      "ISO2": "BJ",
+      "ISO3": "BEN"
+    },
+    "BERMUDA": {
+      "ISO2": "BM",
+      "ISO3": "BMU"
+    },
+    "BES": {
+      "ISO2": "BQ",
+      "ISO3": "BES"
+    },
+    "BF": {
+      "ISO2": "BF",
+      "ISO3": "BFA"
+    },
+    "BFA": {
+      "ISO2": "BF",
+      "ISO3": "BFA"
+    },
+    "BG": {
+      "ISO2": "BG",
+      "ISO3": "BGR"
+    },
+    "BGD": {
+      "ISO2": "BD",
+      "ISO3": "BGD"
+    },
+    "BGR": {
+      "ISO2": "BG",
+      "ISO3": "BGR"
+    },
+    "BH": {
+      "ISO2": "BH",
+      "ISO3": "BHR"
+    },
+    "BHR": {
+      "ISO2": "BH",
+      "ISO3": "BHR"
+    },
+    "BHS": {
+      "ISO2": "BS",
+      "ISO3": "BHS"
+    },
+    "BHUTAN": {
+      "ISO2": "BT",
+      "ISO3": "BTN"
+    },
+    "BHUTANESE": {
+      "ISO2": "BT",
+      "ISO3": "BTN"
+    },
+    "BI": {
+      "ISO2": "BI",
+      "ISO3": "BDI"
+    },
+    "BIH": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "BJ": {
+      "ISO2": "BJ",
+      "ISO3": "BEN"
+    },
+    "BL": {
+      "ISO2": "BL",
+      "ISO3": "BLM"
+    },
+    "BLM": {
+      "ISO2": "BL",
+      "ISO3": "BLM"
+    },
+    "BLR": {
+      "ISO2": "BY",
+      "ISO3": "BLR"
+    },
+    "BLZ": {
+      "ISO2": "BZ",
+      "ISO3": "BLZ"
+    },
+    "BM": {
+      "ISO2": "BM",
+      "ISO3": "BMU"
+    },
+    "BMU": {
+      "ISO2": "BM",
+      "ISO3": "BMU"
+    },
+    "BN": {
+      "ISO2": "BN",
+      "ISO3": "BRN"
+    },
+    "BO": {
+      "ISO2": "BO",
+      "ISO3": "BOL"
+    },
+    "BOL": {
+      "ISO2": "BO",
+      "ISO3": "BOL"
+    },
+    "BOLIVARIAN REPUBLIC OF VENEZUELA": {
+      "ISO2": "VE",
+      "ISO3": "VEN"
+    },
+    "BOLIVIA": {
+      "ISO2": "BO",
+      "ISO3": "BOL"
+    },
+    "BOLIVIA, PLURINATIONAL STATE OF": {
+      "ISO2": "BO",
+      "ISO3": "BOL"
+    },
+    "BOLIVIAN": {
+      "ISO2": "BO",
+      "ISO3": "BOL"
+    },
+    "BONAIRE, SINT EUSTATIUS AND SABA": {
+      "ISO2": "BQ",
+      "ISO3": "BES"
+    },
+    "BOSNIA": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "BOSNIA AND HERZEGOVINA": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "BOSNIA-HERZEGOVINA": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "BOSNIAN": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "BOTSWANA": {
+      "ISO2": "BW",
+      "ISO3": "BWA"
+    },
+    "BOUVET ISLAND": {
+      "ISO2": "BV",
+      "ISO3": "BVT"
+    },
+    "BQ": {
+      "ISO2": "BQ",
+      "ISO3": "BES"
+    },
+    "BR": {
+      "ISO2": "BR",
+      "ISO3": "BRA"
+    },
+    "BRA": {
+      "ISO2": "BR",
+      "ISO3": "BRA"
+    },
+    "BRAZIL": {
+      "ISO2": "BR",
+      "ISO3": "BRA"
+    },
+    "BRAZILIAN": {
+      "ISO2": "BR",
+      "ISO3": "BRA"
+    },
+    "BRB": {
+      "ISO2": "BB",
+      "ISO3": "BRB"
+    },
+    "BRITISH": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "BRITISH INDIAN OCEAN TERRITORY": {
+      "ISO2": "IO",
+      "ISO3": "IOT"
+    },
+    "BRITISH VIRGIN ISLANDS": {
+      "ISO2": "VG",
+      "ISO3": "VGB"
+    },
+    "BRN": {
+      "ISO2": "BN",
+      "ISO3": "BRN"
+    },
+    "BRUNEI DARUSSALAM": {
+      "ISO2": "BN",
+      "ISO3": "BRN"
+    },
+    "BRUNEI": {
+      "ISO2": "BN",
+      "ISO3": "BRN"
+    },
+    "BRUNEIAN": {
+      "ISO2": "BN",
+      "ISO3": "BRN"
+    },
+    "BS": {
+      "ISO2": "BS",
+      "ISO3": "BHS"
+    },
+    "BT": {
+      "ISO2": "BT",
+      "ISO3": "BTN"
+    },
+    "BTN": {
+      "ISO2": "BT",
+      "ISO3": "BTN"
+    },
+    "BULGARIA": {
+      "ISO2": "BG",
+      "ISO3": "BGR"
+    },
+    "BULGARIAN": {
+      "ISO2": "BG",
+      "ISO3": "BGR"
+    },
+    "BURKINA FASO": {
+      "ISO2": "BF",
+      "ISO3": "BFA"
+    },
+    "BURKINABE": {
+      "ISO2": "BF",
+      "ISO3": "BFA"
+    },
+    "BURMA": {
+      "ISO2": "MM",
+      "ISO3": "MMR"
+    },
+    "BURMESE": {
+      "ISO2": "MM",
+      "ISO3": "MMR"
+    },
+    "BURUNDI": {
+      "ISO2": "BI",
+      "ISO3": "BDI"
+    },
+    "BURUNDIAN": {
+      "ISO2": "BI",
+      "ISO3": "BDI"
+    },
+    "BV": {
+      "ISO2": "BV",
+      "ISO3": "BVT"
+    },
+    "BVT": {
+      "ISO2": "BV",
+      "ISO3": "BVT"
+    },
+    "BW": {
+      "ISO2": "BW",
+      "ISO3": "BWA"
+    },
+    "BWA": {
+      "ISO2": "BW",
+      "ISO3": "BWA"
+    },
+    "BY": {
+      "ISO2": "BY",
+      "ISO3": "BLR"
+    },
+    "BZ": {
+      "ISO2": "BZ",
+      "ISO3": "BLZ"
+    },
+    "CA": {
+      "ISO2": "CA",
+      "ISO3": "CAN"
+    },
+    "CABO VERDE": {
+      "ISO2": "CV",
+      "ISO3": "CPV"
+    },
+    "CAF": {
+      "ISO2": "CF",
+      "ISO3": "CAF"
+    },
+    "CAMBODIA": {
+      "ISO2": "KH",
+      "ISO3": "KHM"
+    },
+    "CAMBODIAN": {
+      "ISO2": "KH",
+      "ISO3": "KHM"
+    },
+    "CAMEROON": {
+      "ISO2": "CM",
+      "ISO3": "CMR"
+    },
+    "CAMEROONIAN": {
+      "ISO2": "CM",
+      "ISO3": "CMR"
+    },
+    "CAN": {
+      "ISO2": "CA",
+      "ISO3": "CAN"
+    },
+    "CANADA": {
+      "ISO2": "CA",
+      "ISO3": "CAN"
+    },
+    "CANADIAN": {
+      "ISO2": "CA",
+      "ISO3": "CAN"
+    },
+    "CAPE VERDE": {
+      "ISO2": "CV",
+      "ISO3": "CPV"
+    },
+    "CAPE VERDEAN": {
+      "ISO2": "CV",
+      "ISO3": "CPV"
+    },
+    "CAYMAN ISLANDS": {
+      "ISO2": "KY",
+      "ISO3": "CYM"
+    },
+    "CC": {
+      "ISO2": "CC",
+      "ISO3": "CCK"
+    },
+    "CCK": {
+      "ISO2": "CC",
+      "ISO3": "CCK"
+    },
+    "CD": {
+      "ISO2": "CD",
+      "ISO3": "COD"
+    },
+    "CENTRAL AFRICAN": {
+      "ISO2": "CF",
+      "ISO3": "CAF"
+    },
+    "CENTRAL AFRICAN REPUBLIC": {
+      "ISO2": "CF",
+      "ISO3": "CAF"
+    },
+    "CF": {
+      "ISO2": "CF",
+      "ISO3": "CAF"
+    },
+    "CG": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "CH": {
+      "ISO2": "CH",
+      "ISO3": "CHE"
+    },
+    "CHAD": {
+      "ISO2": "TD",
+      "ISO3": "TCD"
+    },
+    "CHADIAN": {
+      "ISO2": "TD",
+      "ISO3": "TCD"
+    },
+    "CHE": {
+      "ISO2": "CH",
+      "ISO3": "CHE"
+    },
+    "CHILE": {
+      "ISO2": "CL",
+      "ISO3": "CHL"
+    },
+    "CHILEAN": {
+      "ISO2": "CL",
+      "ISO3": "CHL"
+    },
+    "CHINA": {
+      "ISO2": "CN",
+      "ISO3": "CHN"
+    },
+    "CHINESE": {
+      "ISO2": "CN",
+      "ISO3": "CHN"
+    },
+    "CHL": {
+      "ISO2": "CL",
+      "ISO3": "CHL"
+    },
+    "CHN": {
+      "ISO2": "CN",
+      "ISO3": "CHN"
+    },
+    "CHRISTMAS ISLAND": {
+      "ISO2": "CX",
+      "ISO3": "CXR"
+    },
+    "CI": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "CIV": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "CK": {
+      "ISO2": "CK",
+      "ISO3": "COK"
+    },
+    "CL": {
+      "ISO2": "CL",
+      "ISO3": "CHL"
+    },
+    "CM": {
+      "ISO2": "CM",
+      "ISO3": "CMR"
+    },
+    "CMR": {
+      "ISO2": "CM",
+      "ISO3": "CMR"
+    },
+    "CN": {
+      "ISO2": "CN",
+      "ISO3": "CHN"
+    },
+    "CO": {
+      "ISO2": "CO",
+      "ISO3": "COL"
+    },
+    "COCOS (KEELING) ISLANDS": {
+      "ISO2": "CC",
+      "ISO3": "CCK"
+    },
+    "COD": {
+      "ISO2": "CD",
+      "ISO3": "COD"
+    },
+    "COG": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "COK": {
+      "ISO2": "CK",
+      "ISO3": "COK"
+    },
+    "COL": {
+      "ISO2": "CO",
+      "ISO3": "COL"
+    },
+    "COLOMBIA": {
+      "ISO2": "CO",
+      "ISO3": "COL"
+    },
+    "COLOMBIAN": {
+      "ISO2": "CO",
+      "ISO3": "COL"
+    },
+    "COM": {
+      "ISO2": "KM",
+      "ISO3": "COM"
+    },
+    "COMMONWEALTH OF DOMINICA": {
+      "ISO2": "DM",
+      "ISO3": "DMA"
+    },
+    "COMMONWEALTH OF THE BAHAMAS": {
+      "ISO2": "BS",
+      "ISO3": "BHS"
+    },
+    "COMMONWEALTH OF THE NORTHERN MARIANA ISLANDS": {
+      "ISO2": "MP",
+      "ISO3": "MNP"
+    },
+    "COMORAN": {
+      "ISO2": "KM",
+      "ISO3": "COM"
+    },
+    "COMOROS": {
+      "ISO2": "KM",
+      "ISO3": "COM"
+    },
+    "CONGO": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "CONGO REPUBLIC": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "CONGO, DEMOCRATIC REPUBLIC OF THE": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "DR CONGO": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "CONGO, THE DEMOCRATIC REPUBLIC OF THE": {
+      "ISO2": "CD",
+      "ISO3": "COD"
+    },
+    "CONGOLESE": {
+      "ISO2": "CD",
+      "ISO3": "COD"
+    },
+    "COOK ISLANDS": {
+      "ISO2": "CK",
+      "ISO3": "COK"
+    },
+    "COSTA RICA": {
+      "ISO2": "CR",
+      "ISO3": "CRI"
+    },
+    "COSTA RICAN": {
+      "ISO2": "CR",
+      "ISO3": "CRI"
+    },
+    "COTE D'IVOIRE": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "CÔTE D’IVOIRE": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "CPV": {
+      "ISO2": "CV",
+      "ISO3": "CPV"
+    },
+    "CR": {
+      "ISO2": "CR",
+      "ISO3": "CRI"
+    },
+    "CRI": {
+      "ISO2": "CR",
+      "ISO3": "CRI"
+    },
+    "CROATIA": {
+      "ISO2": "HR",
+      "ISO3": "HRV"
+    },
+    "CROATIAN": {
+      "ISO2": "HR",
+      "ISO3": "HRV"
+    },
+    "CU": {
+      "ISO2": "CU",
+      "ISO3": "CUB"
+    },
+    "CUB": {
+      "ISO2": "CU",
+      "ISO3": "CUB"
+    },
+    "CUBA": {
+      "ISO2": "CU",
+      "ISO3": "CUB"
+    },
+    "CUBAN": {
+      "ISO2": "CU",
+      "ISO3": "CUB"
+    },
+    "CURAÇAO": {
+      "ISO2": "CW",
+      "ISO3": "CUW"
+    },
+    "CUW": {
+      "ISO2": "CW",
+      "ISO3": "CUW"
+    },
+    "CV": {
+      "ISO2": "CV",
+      "ISO3": "CPV"
+    },
+    "CW": {
+      "ISO2": "CW",
+      "ISO3": "CUW"
+    },
+    "CX": {
+      "ISO2": "CX",
+      "ISO3": "CXR"
+    },
+    "CXR": {
+      "ISO2": "CX",
+      "ISO3": "CXR"
+    },
+    "CY": {
+      "ISO2": "CY",
+      "ISO3": "CYP"
+    },
+    "CYM": {
+      "ISO2": "KY",
+      "ISO3": "CYM"
+    },
+    "CYP": {
+      "ISO2": "CY",
+      "ISO3": "CYP"
+    },
+    "CYPRIOT": {
+      "ISO2": "CY",
+      "ISO3": "CYP"
+    },
+    "CYPRUS": {
+      "ISO2": "CY",
+      "ISO3": "CYP"
+    },
+    "CZ": {
+      "ISO2": "CZ",
+      "ISO3": "CZE"
+    },
+    "CZE": {
+      "ISO2": "CZ",
+      "ISO3": "CZE"
+    },
+    "CZECH": {
+      "ISO2": "CZ",
+      "ISO3": "CZE"
+    },
+    "CZECH REPUBLIC": {
+      "ISO2": "CZ",
+      "ISO3": "CZE"
+    },
+    "CZECHIA": {
+      "ISO2": "CZ",
+      "ISO3": "CZE"
+    },
+    "CÔTE D'IVOIRE": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "DANISH": {
+      "ISO2": "DK",
+      "ISO3": "DNK"
+    },
+    "DE": {
+      "ISO2": "DE",
+      "ISO3": "DEU"
+    },
+    "DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "DEMOCRATIC REPUBLIC OF SAO TOME AND PRINCIPE": {
+      "ISO2": "ST",
+      "ISO3": "STP"
+    },
+    "DEMOCRATIC REPUBLIC OF THE CONGO": {
+      "ISO2": "CD",
+      "ISO3": "COD"
+    },
+    "DEMOCRATIC REPUBLIC OF TIMOR-LESTE": {
+      "ISO2": "TL",
+      "ISO3": "TLS"
+    },
+    "DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA": {
+      "ISO2": "LK",
+      "ISO3": "LKA"
+    },
+    "DENMARK": {
+      "ISO2": "DK",
+      "ISO3": "DNK"
+    },
+    "DEU": {
+      "ISO2": "DE",
+      "ISO3": "DEU"
+    },
+    "DJ": {
+      "ISO2": "DJ",
+      "ISO3": "DJI"
+    },
+    "DJI": {
+      "ISO2": "DJ",
+      "ISO3": "DJI"
+    },
+    "DJIBOUTI": {
+      "ISO2": "DJ",
+      "ISO3": "DJI"
+    },
+    "DK": {
+      "ISO2": "DK",
+      "ISO3": "DNK"
+    },
+    "DM": {
+      "ISO2": "DM",
+      "ISO3": "DMA"
+    },
+    "DMA": {
+      "ISO2": "DM",
+      "ISO3": "DMA"
+    },
+    "DNK": {
+      "ISO2": "DK",
+      "ISO3": "DNK"
+    },
+    "DO": {
+      "ISO2": "DO",
+      "ISO3": "DOM"
+    },
+    "DOM": {
+      "ISO2": "DO",
+      "ISO3": "DOM"
+    },
+    "DOMINICA": {
+      "ISO2": "DM",
+      "ISO3": "DMA"
+    },
+    "DOMINICAN": {
+      "ISO2": "DM",
+      "ISO3": "DMA"
+    },
+    "DOMINICAN REPUBLIC": {
+      "ISO2": "DO",
+      "ISO3": "DOM"
+    },
+    "DRC": {
+      "ISO2": "CD",
+      "ISO3": "COD"
+    },
+    "DUTCH": {
+      "ISO2": "NL",
+      "ISO3": "NLD"
+    },
+    "DZ": {
+      "ISO2": "DZ",
+      "ISO3": "DZA"
+    },
+    "DZA": {
+      "ISO2": "DZ",
+      "ISO3": "DZA"
+    },
+    "EAST TIMOR": {
+      "ISO2": "TL",
+      "ISO3": "TLS"
+    },
+    "EAST TIMORESE": {
+      "ISO2": "TL",
+      "ISO3": "TLS"
+    },
+    "EASTERN REPUBLIC OF URUGUAY": {
+      "ISO2": "UY",
+      "ISO3": "URY"
+    },
+    "EC": {
+      "ISO2": "EC",
+      "ISO3": "ECU"
+    },
+    "ECU": {
+      "ISO2": "EC",
+      "ISO3": "ECU"
+    },
+    "ECUADOR": {
+      "ISO2": "EC",
+      "ISO3": "ECU"
+    },
+    "ECUADOREAN": {
+      "ISO2": "EC",
+      "ISO3": "ECU"
+    },
+    "EE": {
+      "ISO2": "EE",
+      "ISO3": "EST"
+    },
+    "EG": {
+      "ISO2": "EG",
+      "ISO3": "EGY"
+    },
+    "EGY": {
+      "ISO2": "EG",
+      "ISO3": "EGY"
+    },
+    "EGYPT": {
+      "ISO2": "EG",
+      "ISO3": "EGY"
+    },
+    "EGYPTIAN": {
+      "ISO2": "EG",
+      "ISO3": "EGY"
+    },
+    "EH": {
+      "ISO2": "EH",
+      "ISO3": "ESH"
+    },
+    "EL SALVADOR": {
+      "ISO2": "SV",
+      "ISO3": "SLV"
+    },
+    "EMIRIAN": {
+      "ISO2": "AE",
+      "ISO3": "ARE"
+    },
+    "ENGLAND": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "EQUATORIAL GUINEA": {
+      "ISO2": "GQ",
+      "ISO3": "GNQ"
+    },
+    "EQUATORIAL GUINEAN": {
+      "ISO2": "GQ",
+      "ISO3": "GNQ"
+    },
+    "ER": {
+      "ISO2": "ER",
+      "ISO3": "ERI"
+    },
+    "ERI": {
+      "ISO2": "ER",
+      "ISO3": "ERI"
+    },
+    "ERITREA": {
+      "ISO2": "ER",
+      "ISO3": "ERI"
+    },
+    "ERITREAN": {
+      "ISO2": "ER",
+      "ISO3": "ERI"
+    },
+    "ES": {
+      "ISO2": "ES",
+      "ISO3": "ESP"
+    },
+    "ESH": {
+      "ISO2": "EH",
+      "ISO3": "ESH"
+    },
+    "ESP": {
+      "ISO2": "ES",
+      "ISO3": "ESP"
+    },
+    "EST": {
+      "ISO2": "EE",
+      "ISO3": "EST"
+    },
+    "ESTONIA": {
+      "ISO2": "EE",
+      "ISO3": "EST"
+    },
+    "ESTONIAN": {
+      "ISO2": "EE",
+      "ISO3": "EST"
+    },
+    "ESWATINI": {
+      "ISO2": "SZ",
+      "ISO3": "SWZ"
+    },
+    "ET": {
+      "ISO2": "ET",
+      "ISO3": "ETH"
+    },
+    "ETH": {
+      "ISO2": "ET",
+      "ISO3": "ETH"
+    },
+    "ETHIOPIA": {
+      "ISO2": "ET",
+      "ISO3": "ETH"
+    },
+    "ETHIOPIAN": {
+      "ISO2": "ET",
+      "ISO3": "ETH"
+    },
+    "FALKLAND ISLANDS (MALVINAS)": {
+      "ISO2": "FK",
+      "ISO3": "FLK"
+    },
+    "FAROE ISLANDS": {
+      "ISO2": "FO",
+      "ISO3": "FRO"
+    },
+    "FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA": {
+      "ISO2": "ET",
+      "ISO3": "ETH"
+    },
+    "FEDERAL DEMOCRATIC REPUBLIC OF NEPAL": {
+      "ISO2": "NP",
+      "ISO3": "NPL"
+    },
+    "FEDERAL REPUBLIC OF GERMANY": {
+      "ISO2": "DE",
+      "ISO3": "DEU"
+    },
+    "FEDERAL REPUBLIC OF NIGERIA": {
+      "ISO2": "NG",
+      "ISO3": "NGA"
+    },
+    "FEDERAL REPUBLIC OF SOMALIA": {
+      "ISO2": "SO",
+      "ISO3": "SOM"
+    },
+    "FEDERATED STATES OF MICRONESIA": {
+      "ISO2": "FM",
+      "ISO3": "FSM"
+    },
+    "FEDERATIVE REPUBLIC OF BRAZIL": {
+      "ISO2": "BR",
+      "ISO3": "BRA"
+    },
+    "FI": {
+      "ISO2": "FI",
+      "ISO3": "FIN"
+    },
+    "FIJI": {
+      "ISO2": "FJ",
+      "ISO3": "FJI"
+    },
+    "FIJIAN": {
+      "ISO2": "FJ",
+      "ISO3": "FJI"
+    },
+    "FILIPINO": {
+      "ISO2": "PH",
+      "ISO3": "PHL"
+    },
+    "FIN": {
+      "ISO2": "FI",
+      "ISO3": "FIN"
+    },
+    "FINLAND": {
+      "ISO2": "FI",
+      "ISO3": "FIN"
+    },
+    "FINNISH": {
+      "ISO2": "FI",
+      "ISO3": "FIN"
+    },
+    "FJ": {
+      "ISO2": "FJ",
+      "ISO3": "FJI"
+    },
+    "FJI": {
+      "ISO2": "FJ",
+      "ISO3": "FJI"
+    },
+    "FK": {
+      "ISO2": "FK",
+      "ISO3": "FLK"
+    },
+    "FLK": {
+      "ISO2": "FK",
+      "ISO3": "FLK"
+    },
+    "FM": {
+      "ISO2": "FM",
+      "ISO3": "FSM"
+    },
+    "FO": {
+      "ISO2": "FO",
+      "ISO3": "FRO"
+    },
+    "FR": {
+      "ISO2": "FR",
+      "ISO3": "FRA"
+    },
+    "FRA": {
+      "ISO2": "FR",
+      "ISO3": "FRA"
+    },
+    "FRANCE": {
+      "ISO2": "FR",
+      "ISO3": "FRA"
+    },
+    "FRENCH": {
+      "ISO2": "FR",
+      "ISO3": "FRA"
+    },
+    "FRENCH GUIANA": {
+      "ISO2": "GF",
+      "ISO3": "GUF"
+    },
+    "FRENCH POLYNESIA": {
+      "ISO2": "PF",
+      "ISO3": "PYF"
+    },
+    "FRENCH REPUBLIC": {
+      "ISO2": "FR",
+      "ISO3": "FRA"
+    },
+    "FRENCH SOUTHERN TERRITORIES": {
+      "ISO2": "TF",
+      "ISO3": "ATF"
+    },
+    "FRO": {
+      "ISO2": "FO",
+      "ISO3": "FRO"
+    },
+    "FSM": {
+      "ISO2": "FM",
+      "ISO3": "FSM"
+    },
+    "GA": {
+      "ISO2": "GA",
+      "ISO3": "GAB"
+    },
+    "GAB": {
+      "ISO2": "GA",
+      "ISO3": "GAB"
+    },
+    "GABON": {
+      "ISO2": "GA",
+      "ISO3": "GAB"
+    },
+    "GABONESE": {
+      "ISO2": "GA",
+      "ISO3": "GAB"
+    },
+    "GABONESE REPUBLIC": {
+      "ISO2": "GA",
+      "ISO3": "GAB"
+    },
+    "GAMBIA": {
+      "ISO2": "GM",
+      "ISO3": "GMB"
+    },
+    "GAMBIAN": {
+      "ISO2": "GM",
+      "ISO3": "GMB"
+    },
+    "GB": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "GBR": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "GD": {
+      "ISO2": "GD",
+      "ISO3": "GRD"
+    },
+    "GE": {
+      "ISO2": "GE",
+      "ISO3": "GEO"
+    },
+    "GEO": {
+      "ISO2": "GE",
+      "ISO3": "GEO"
+    },
+    "GEORGIA": {
+      "ISO2": "GE",
+      "ISO3": "GEO"
+    },
+    "GEORGIAN": {
+      "ISO2": "GE",
+      "ISO3": "GEO"
+    },
+    "GERMAN": {
+      "ISO2": "DE",
+      "ISO3": "DEU"
+    },
+    "GERMANY": {
+      "ISO2": "DE",
+      "ISO3": "DEU"
+    },
+    "GF": {
+      "ISO2": "GF",
+      "ISO3": "GUF"
+    },
+    "GG": {
+      "ISO2": "GG",
+      "ISO3": "GGY"
+    },
+    "GGY": {
+      "ISO2": "GG",
+      "ISO3": "GGY"
+    },
+    "GH": {
+      "ISO2": "GH",
+      "ISO3": "GHA"
+    },
+    "GHA": {
+      "ISO2": "GH",
+      "ISO3": "GHA"
+    },
+    "GHANA": {
+      "ISO2": "GH",
+      "ISO3": "GHA"
+    },
+    "GHANAIAN": {
+      "ISO2": "GH",
+      "ISO3": "GHA"
+    },
+    "GI": {
+      "ISO2": "GI",
+      "ISO3": "GIB"
+    },
+    "GIB": {
+      "ISO2": "GI",
+      "ISO3": "GIB"
+    },
+    "GIBRALTAR": {
+      "ISO2": "GI",
+      "ISO3": "GIB"
+    },
+    "GIN": {
+      "ISO2": "GN",
+      "ISO3": "GIN"
+    },
+    "GL": {
+      "ISO2": "GL",
+      "ISO3": "GRL"
+    },
+    "GLP": {
+      "ISO2": "GP",
+      "ISO3": "GLP"
+    },
+    "GM": {
+      "ISO2": "GM",
+      "ISO3": "GMB"
+    },
+    "GMB": {
+      "ISO2": "GM",
+      "ISO3": "GMB"
+    },
+    "GN": {
+      "ISO2": "GN",
+      "ISO3": "GIN"
+    },
+    "GNB": {
+      "ISO2": "GW",
+      "ISO3": "GNB"
+    },
+    "GNQ": {
+      "ISO2": "GQ",
+      "ISO3": "GNQ"
+    },
+    "GP": {
+      "ISO2": "GP",
+      "ISO3": "GLP"
+    },
+    "GQ": {
+      "ISO2": "GQ",
+      "ISO3": "GNQ"
+    },
+    "GR": {
+      "ISO2": "GR",
+      "ISO3": "GRC"
+    },
+    "GRAND DUCHY OF LUXEMBOURG": {
+      "ISO2": "LU",
+      "ISO3": "LUX"
+    },
+    "GRC": {
+      "ISO2": "GR",
+      "ISO3": "GRC"
+    },
+    "GRD": {
+      "ISO2": "GD",
+      "ISO3": "GRD"
+    },
+    "GREECE": {
+      "ISO2": "GR",
+      "ISO3": "GRC"
+    },
+    "GREEK": {
+      "ISO2": "GR",
+      "ISO3": "GRC"
+    },
+    "GREENLAND": {
+      "ISO2": "GL",
+      "ISO3": "GRL"
+    },
+    "GRENADA": {
+      "ISO2": "GD",
+      "ISO3": "GRD"
+    },
+    "GRENADIAN": {
+      "ISO2": "GD",
+      "ISO3": "GRD"
+    },
+    "GRL": {
+      "ISO2": "GL",
+      "ISO3": "GRL"
+    },
+    "GS": {
+      "ISO2": "GS",
+      "ISO3": "SGS"
+    },
+    "GT": {
+      "ISO2": "GT",
+      "ISO3": "GTM"
+    },
+    "GTM": {
+      "ISO2": "GT",
+      "ISO3": "GTM"
+    },
+    "GU": {
+      "ISO2": "GU",
+      "ISO3": "GUM"
+    },
+    "GUADELOUPE": {
+      "ISO2": "GP",
+      "ISO3": "GLP"
+    },
+    "GUAM": {
+      "ISO2": "GU",
+      "ISO3": "GUM"
+    },
+    "GUATEMALA": {
+      "ISO2": "GT",
+      "ISO3": "GTM"
+    },
+    "GUATEMALAN": {
+      "ISO2": "GT",
+      "ISO3": "GTM"
+    },
+    "GUERNSEY": {
+      "ISO2": "GG",
+      "ISO3": "GGY"
+    },
+    "GUF": {
+      "ISO2": "GF",
+      "ISO3": "GUF"
+    },
+    "GUINEA": {
+      "ISO2": "GN",
+      "ISO3": "GIN"
+    },
+    "GUINEA-BISSAU": {
+      "ISO2": "GW",
+      "ISO3": "GNB"
+    },
+    "GUINEA-BISSAUAN": {
+      "ISO2": "GW",
+      "ISO3": "GNB"
+    },
+    "GUINEAN": {
+      "ISO2": "GN",
+      "ISO3": "GIN"
+    },
+    "GUM": {
+      "ISO2": "GU",
+      "ISO3": "GUM"
+    },
+    "GUY": {
+      "ISO2": "GY",
+      "ISO3": "GUY"
+    },
+    "GUYANA": {
+      "ISO2": "GY",
+      "ISO3": "GUY"
+    },
+    "GUYANESE": {
+      "ISO2": "GY",
+      "ISO3": "GUY"
+    },
+    "GW": {
+      "ISO2": "GW",
+      "ISO3": "GNB"
+    },
+    "GY": {
+      "ISO2": "GY",
+      "ISO3": "GUY"
+    },
+    "HAITI": {
+      "ISO2": "HT",
+      "ISO3": "HTI"
+    },
+    "HAITIAN": {
+      "ISO2": "HT",
+      "ISO3": "HTI"
+    },
+    "HASHEMITE KINGDOM OF JORDAN": {
+      "ISO2": "JO",
+      "ISO3": "JOR"
+    },
+    "HEARD ISLAND AND MCDONALD ISLANDS": {
+      "ISO2": "HM",
+      "ISO3": "HMD"
+    },
+    "HELLENIC REPUBLIC": {
+      "ISO2": "GR",
+      "ISO3": "GRC"
+    },
+    "HERZEGOVINIAN": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "HK": {
+      "ISO2": "HK",
+      "ISO3": "HKG"
+    },
+    "HKG": {
+      "ISO2": "HK",
+      "ISO3": "HKG"
+    },
+    "HM": {
+      "ISO2": "HM",
+      "ISO3": "HMD"
+    },
+    "HMD": {
+      "ISO2": "HM",
+      "ISO3": "HMD"
+    },
+    "HN": {
+      "ISO2": "HN",
+      "ISO3": "HND"
+    },
+    "HND": {
+      "ISO2": "HN",
+      "ISO3": "HND"
+    },
+    "HOLY SEE (VATICAN CITY STATE)": {
+      "ISO2": "VA",
+      "ISO3": "VAT"
+    },
+    "HONDURAN": {
+      "ISO2": "HN",
+      "ISO3": "HND"
+    },
+    "HONDURAS": {
+      "ISO2": "HN",
+      "ISO3": "HND"
+    },
+    "HONG KONG": {
+      "ISO2": "HK",
+      "ISO3": "HKG"
+    },
+    "HONG KONG SPECIAL ADMINISTRATIVE REGION OF CHINA": {
+      "ISO2": "HK",
+      "ISO3": "HKG"
+    },
+    "HR": {
+      "ISO2": "HR",
+      "ISO3": "HRV"
+    },
+    "HRV": {
+      "ISO2": "HR",
+      "ISO3": "HRV"
+    },
+    "HT": {
+      "ISO2": "HT",
+      "ISO3": "HTI"
+    },
+    "HTI": {
+      "ISO2": "HT",
+      "ISO3": "HTI"
+    },
+    "HU": {
+      "ISO2": "HU",
+      "ISO3": "HUN"
+    },
+    "HUN": {
+      "ISO2": "HU",
+      "ISO3": "HUN"
+    },
+    "HUNGARIAN": {
+      "ISO2": "HU",
+      "ISO3": "HUN"
+    },
+    "HUNGARY": {
+      "ISO2": "HU",
+      "ISO3": "HUN"
+    },
+    "I-KIRIBATI": {
+      "ISO2": "KI",
+      "ISO3": "KIR"
+    },
+    "ICELAND": {
+      "ISO2": "IS",
+      "ISO3": "ISL"
+    },
+    "ICELANDER": {
+      "ISO2": "IS",
+      "ISO3": "ISL"
+    },
+    "ID": {
+      "ISO2": "ID",
+      "ISO3": "IDN"
+    },
+    "IDN": {
+      "ISO2": "ID",
+      "ISO3": "IDN"
+    },
+    "IE": {
+      "ISO2": "IE",
+      "ISO3": "IRL"
+    },
+    "IL": {
+      "ISO2": "IL",
+      "ISO3": "ISR"
+    },
+    "IM": {
+      "ISO2": "IM",
+      "ISO3": "IMN"
+    },
+    "IMN": {
+      "ISO2": "IM",
+      "ISO3": "IMN"
+    },
+    "IN": {
+      "ISO2": "IN",
+      "ISO3": "IND"
+    },
+    "IND": {
+      "ISO2": "IN",
+      "ISO3": "IND"
+    },
+    "INDEPENDENT STATE OF PAPUA NEW GUINEA": {
+      "ISO2": "PG",
+      "ISO3": "PNG"
+    },
+    "INDEPENDENT STATE OF SAMOA": {
+      "ISO2": "WS",
+      "ISO3": "WSM"
+    },
+    "INDIA": {
+      "ISO2": "IN",
+      "ISO3": "IND"
+    },
+    "INDIAN": {
+      "ISO2": "IN",
+      "ISO3": "IND"
+    },
+    "INDONESIA": {
+      "ISO2": "ID",
+      "ISO3": "IDN"
+    },
+    "INDONESIAN": {
+      "ISO2": "ID",
+      "ISO3": "IDN"
+    },
+    "IO": {
+      "ISO2": "IO",
+      "ISO3": "IOT"
+    },
+    "IOT": {
+      "ISO2": "IO",
+      "ISO3": "IOT"
+    },
+    "IQ": {
+      "ISO2": "IQ",
+      "ISO3": "IRQ"
+    },
+    "IR": {
+      "ISO2": "IR",
+      "ISO3": "IRN"
+    },
+    "IRAN": {
+      "ISO2": "IR",
+      "ISO3": "IRN"
+    },
+    "IRAN, ISLAMIC REPUBLIC OF": {
+      "ISO2": "IR",
+      "ISO3": "IRN"
+    },
+    "IRANIAN": {
+      "ISO2": "IR",
+      "ISO3": "IRN"
+    },
+    "IRAQ": {
+      "ISO2": "IQ",
+      "ISO3": "IRQ"
+    },
+    "IRAQI": {
+      "ISO2": "IQ",
+      "ISO3": "IRQ"
+    },
+    "IRELAND": {
+      "ISO2": "IE",
+      "ISO3": "IRL"
+    },
+    "IRISH": {
+      "ISO2": "IE",
+      "ISO3": "IRL"
+    },
+    "IRL": {
+      "ISO2": "IE",
+      "ISO3": "IRL"
+    },
+    "IRN": {
+      "ISO2": "IR",
+      "ISO3": "IRN"
+    },
+    "IRQ": {
+      "ISO2": "IQ",
+      "ISO3": "IRQ"
+    },
+    "IS": {
+      "ISO2": "IS",
+      "ISO3": "ISL"
+    },
+    "ISL": {
+      "ISO2": "IS",
+      "ISO3": "ISL"
+    },
+    "ISLAMIC REPUBLIC OF AFGHANISTAN": {
+      "ISO2": "AF",
+      "ISO3": "AFG"
+    },
+    "ISLAMIC REPUBLIC OF IRAN": {
+      "ISO2": "IR",
+      "ISO3": "IRN"
+    },
+    "ISLAMIC REPUBLIC OF MAURITANIA": {
+      "ISO2": "MR",
+      "ISO3": "MRT"
+    },
+    "ISLAMIC REPUBLIC OF PAKISTAN": {
+      "ISO2": "PK",
+      "ISO3": "PAK"
+    },
+    "ISLE OF MAN": {
+      "ISO2": "IM",
+      "ISO3": "IMN"
+    },
+    "ISR": {
+      "ISO2": "IL",
+      "ISO3": "ISR"
+    },
+    "ISRAEL": {
+      "ISO2": "IL",
+      "ISO3": "ISR"
+    },
+    "ISRAELI": {
+      "ISO2": "IL",
+      "ISO3": "ISR"
+    },
+    "IT": {
+      "ISO2": "IT",
+      "ISO3": "ITA"
+    },
+    "ITA": {
+      "ISO2": "IT",
+      "ISO3": "ITA"
+    },
+    "ITALIAN": {
+      "ISO2": "IT",
+      "ISO3": "ITA"
+    },
+    "ITALIAN REPUBLIC": {
+      "ISO2": "IT",
+      "ISO3": "ITA"
+    },
+    "ITALY": {
+      "ISO2": "IT",
+      "ISO3": "ITA"
+    },
+    "IVORIAN": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "IVORY COAST": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "JAM": {
+      "ISO2": "JM",
+      "ISO3": "JAM"
+    },
+    "JAMAICA": {
+      "ISO2": "JM",
+      "ISO3": "JAM"
+    },
+    "JAMAICAN": {
+      "ISO2": "JM",
+      "ISO3": "JAM"
+    },
+    "JAPAN": {
+      "ISO2": "JP",
+      "ISO3": "JPN"
+    },
+    "JAPANESE": {
+      "ISO2": "JP",
+      "ISO3": "JPN"
+    },
+    "JE": {
+      "ISO2": "JE",
+      "ISO3": "JEY"
+    },
+    "JERSEY": {
+      "ISO2": "JE",
+      "ISO3": "JEY"
+    },
+    "JEY": {
+      "ISO2": "JE",
+      "ISO3": "JEY"
+    },
+    "JM": {
+      "ISO2": "JM",
+      "ISO3": "JAM"
+    },
+    "JO": {
+      "ISO2": "JO",
+      "ISO3": "JOR"
+    },
+    "JOR": {
+      "ISO2": "JO",
+      "ISO3": "JOR"
+    },
+    "JORDAN": {
+      "ISO2": "JO",
+      "ISO3": "JOR"
+    },
+    "JORDANIAN": {
+      "ISO2": "JO",
+      "ISO3": "JOR"
+    },
+    "JP": {
+      "ISO2": "JP",
+      "ISO3": "JPN"
+    },
+    "JPN": {
+      "ISO2": "JP",
+      "ISO3": "JPN"
+    },
+    "KAZ": {
+      "ISO2": "KZ",
+      "ISO3": "KAZ"
+    },
+    "KAZAKHSTAN": {
+      "ISO2": "KZ",
+      "ISO3": "KAZ"
+    },
+    "KAZAKHSTANI": {
+      "ISO2": "KZ",
+      "ISO3": "KAZ"
+    },
+    "KAZAKSTAN": {
+      "ISO2": "KZ",
+      "ISO3": "KAZ"
+    },
+    "KE": {
+      "ISO2": "KE",
+      "ISO3": "KEN"
+    },
+    "KEN": {
+      "ISO2": "KE",
+      "ISO3": "KEN"
+    },
+    "KENYA": {
+      "ISO2": "KE",
+      "ISO3": "KEN"
+    },
+    "KENYAN": {
+      "ISO2": "KE",
+      "ISO3": "KEN"
+    },
+    "KG": {
+      "ISO2": "KG",
+      "ISO3": "KGZ"
+    },
+    "KGZ": {
+      "ISO2": "KG",
+      "ISO3": "KGZ"
+    },
+    "KH": {
+      "ISO2": "KH",
+      "ISO3": "KHM"
+    },
+    "KHM": {
+      "ISO2": "KH",
+      "ISO3": "KHM"
+    },
+    "KI": {
+      "ISO2": "KI",
+      "ISO3": "KIR"
+    },
+    "KINGDOM OF BAHRAIN": {
+      "ISO2": "BH",
+      "ISO3": "BHR"
+    },
+    "KINGDOM OF BELGIUM": {
+      "ISO2": "BE",
+      "ISO3": "BEL"
+    },
+    "KINGDOM OF BHUTAN": {
+      "ISO2": "BT",
+      "ISO3": "BTN"
+    },
+    "KINGDOM OF CAMBODIA": {
+      "ISO2": "KH",
+      "ISO3": "KHM"
+    },
+    "KINGDOM OF DENMARK": {
+      "ISO2": "DK",
+      "ISO3": "DNK"
+    },
+    "KINGDOM OF ESWATINI": {
+      "ISO2": "SZ",
+      "ISO3": "SWZ"
+    },
+    "KINGDOM OF LESOTHO": {
+      "ISO2": "LS",
+      "ISO3": "LSO"
+    },
+    "KINGDOM OF MOROCCO": {
+      "ISO2": "MA",
+      "ISO3": "MAR"
+    },
+    "KINGDOM OF NORWAY": {
+      "ISO2": "NO",
+      "ISO3": "NOR"
+    },
+    "KINGDOM OF SAUDI ARABIA": {
+      "ISO2": "SA",
+      "ISO3": "SAU"
+    },
+    "KINGDOM OF SPAIN": {
+      "ISO2": "ES",
+      "ISO3": "ESP"
+    },
+    "KINGDOM OF SWEDEN": {
+      "ISO2": "SE",
+      "ISO3": "SWE"
+    },
+    "KINGDOM OF THAILAND": {
+      "ISO2": "TH",
+      "ISO3": "THA"
+    },
+    "KINGDOM OF THE NETHERLANDS": {
+      "ISO2": "NL",
+      "ISO3": "NLD"
+    },
+    "THE NETHERLANDS": {
+      "ISO2": "NL",
+      "ISO3": "NLD"
+    },
+    "KINGDOM OF TONGA": {
+      "ISO2": "TO",
+      "ISO3": "TON"
+    },
+    "KIR": {
+      "ISO2": "KI",
+      "ISO3": "KIR"
+    },
+    "KIRIBATI": {
+      "ISO2": "KI",
+      "ISO3": "KIR"
+    },
+    "KITTIAN AND NEVISIAN": {
+      "ISO2": "KN",
+      "ISO3": "KNA"
+    },
+    "KM": {
+      "ISO2": "KM",
+      "ISO3": "COM"
+    },
+    "KN": {
+      "ISO2": "KN",
+      "ISO3": "KNA"
+    },
+    "KNA": {
+      "ISO2": "KN",
+      "ISO3": "KNA"
+    },
+    "KOR": {
+      "ISO2": "KR",
+      "ISO3": "KOR"
+    },
+    "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "KOREA, NORTH": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "KOREA, REPUBLIC OF": {
+      "ISO2": "KR",
+      "ISO3": "KOR"
+    },
+    "KOSOVO": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "KP": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "KR": {
+      "ISO2": "KR",
+      "ISO3": "KOR"
+    },
+    "KUWAIT": {
+      "ISO2": "KW",
+      "ISO3": "KWT"
+    },
+    "KUWAITI": {
+      "ISO2": "KW",
+      "ISO3": "KWT"
+    },
+    "KW": {
+      "ISO2": "KW",
+      "ISO3": "KWT"
+    },
+    "KWT": {
+      "ISO2": "KW",
+      "ISO3": "KWT"
+    },
+    "KY": {
+      "ISO2": "KY",
+      "ISO3": "CYM"
+    },
+    "KYRGYZ": {
+      "ISO2": "KG",
+      "ISO3": "KGZ"
+    },
+    "KYRGYZ REPUBLIC": {
+      "ISO2": "KG",
+      "ISO3": "KGZ"
+    },
+    "KYRGYZSTAN": {
+      "ISO2": "KG",
+      "ISO3": "KGZ"
+    },
+    "KZ": {
+      "ISO2": "KZ",
+      "ISO3": "KAZ"
+    },
+    "LA": {
+      "ISO2": "LA",
+      "ISO3": "LAO"
+    },
+    "LAO": {
+      "ISO2": "LA",
+      "ISO3": "LAO"
+    },
+    "LAO PEOPLE'S DEMOCRATIC REPUBLIC": {
+      "ISO2": "LA",
+      "ISO3": "LAO"
+    },
+    "LAOS": {
+      "ISO2": "LA",
+      "ISO3": "LAO"
+    },
+    "LAOTIAN": {
+      "ISO2": "LA",
+      "ISO3": "LAO"
+    },
+    "LATVIA": {
+      "ISO2": "LV",
+      "ISO3": "LVA"
+    },
+    "LATVIAN": {
+      "ISO2": "LV",
+      "ISO3": "LVA"
+    },
+    "LB": {
+      "ISO2": "LB",
+      "ISO3": "LBN"
+    },
+    "LBN": {
+      "ISO2": "LB",
+      "ISO3": "LBN"
+    },
+    "LBR": {
+      "ISO2": "LR",
+      "ISO3": "LBR"
+    },
+    "LBY": {
+      "ISO2": "LY",
+      "ISO3": "LBY"
+    },
+    "LC": {
+      "ISO2": "LC",
+      "ISO3": "LCA"
+    },
+    "LCA": {
+      "ISO2": "LC",
+      "ISO3": "LCA"
+    },
+    "LEBANESE": {
+      "ISO2": "LB",
+      "ISO3": "LBN"
+    },
+    "LEBANESE REPUBLIC": {
+      "ISO2": "LB",
+      "ISO3": "LBN"
+    },
+    "LEBANON": {
+      "ISO2": "LB",
+      "ISO3": "LBN"
+    },
+    "LESOTHO": {
+      "ISO2": "LS",
+      "ISO3": "LSO"
+    },
+    "LI": {
+      "ISO2": "LI",
+      "ISO3": "LIE"
+    },
+    "LIBERIA": {
+      "ISO2": "LR",
+      "ISO3": "LBR"
+    },
+    "LIBERIAN": {
+      "ISO2": "LR",
+      "ISO3": "LBR"
+    },
+    "LIBYA": {
+      "ISO2": "LY",
+      "ISO3": "LBY"
+    },
+    "LIBYAN": {
+      "ISO2": "LY",
+      "ISO3": "LBY"
+    },
+    "LIBYAN ARAB JAMAHIRIYA": {
+      "ISO2": "LY",
+      "ISO3": "LBY"
+    },
+    "LIE": {
+      "ISO2": "LI",
+      "ISO3": "LIE"
+    },
+    "LIECHTENSTEIN": {
+      "ISO2": "LI",
+      "ISO3": "LIE"
+    },
+    "LIECHTENSTEINER": {
+      "ISO2": "LI",
+      "ISO3": "LIE"
+    },
+    "LITHUANIA": {
+      "ISO2": "LT",
+      "ISO3": "LTU"
+    },
+    "LITHUANIAN": {
+      "ISO2": "LT",
+      "ISO3": "LTU"
+    },
+    "LK": {
+      "ISO2": "LK",
+      "ISO3": "LKA"
+    },
+    "LKA": {
+      "ISO2": "LK",
+      "ISO3": "LKA"
+    },
+    "LR": {
+      "ISO2": "LR",
+      "ISO3": "LBR"
+    },
+    "LS": {
+      "ISO2": "LS",
+      "ISO3": "LSO"
+    },
+    "LSO": {
+      "ISO2": "LS",
+      "ISO3": "LSO"
+    },
+    "LT": {
+      "ISO2": "LT",
+      "ISO3": "LTU"
+    },
+    "LTU": {
+      "ISO2": "LT",
+      "ISO3": "LTU"
+    },
+    "LU": {
+      "ISO2": "LU",
+      "ISO3": "LUX"
+    },
+    "LUX": {
+      "ISO2": "LU",
+      "ISO3": "LUX"
+    },
+    "LUXEMBOURG": {
+      "ISO2": "LU",
+      "ISO3": "LUX"
+    },
+    "LUXEMBOURGER": {
+      "ISO2": "LU",
+      "ISO3": "LUX"
+    },
+    "LV": {
+      "ISO2": "LV",
+      "ISO3": "LVA"
+    },
+    "LVA": {
+      "ISO2": "LV",
+      "ISO3": "LVA"
+    },
+    "LY": {
+      "ISO2": "LY",
+      "ISO3": "LBY"
+    },
+    "MA": {
+      "ISO2": "MA",
+      "ISO3": "MAR"
+    },
+    "MAC": {
+      "ISO2": "MO",
+      "ISO3": "MAC"
+    },
+    "MACAO": {
+      "ISO2": "MO",
+      "ISO3": "MAC"
+    },
+    "MACAO SPECIAL ADMINISTRATIVE REGION OF CHINA": {
+      "ISO2": "MO",
+      "ISO3": "MAC"
+    },
+    "MACAU": {
+      "ISO2": "MO",
+      "ISO3": "MAC"
+    },
+    "MACEDONIA": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "MACEDONIAN": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "MADAGASCAR": {
+      "ISO2": "MG",
+      "ISO3": "MDG"
+    },
+    "MAF": {
+      "ISO2": "MF",
+      "ISO3": "MAF"
+    },
+    "MALAGASY": {
+      "ISO2": "MG",
+      "ISO3": "MDG"
+    },
+    "MALAWI": {
+      "ISO2": "MW",
+      "ISO3": "MWI"
+    },
+    "MALAWIAN": {
+      "ISO2": "MW",
+      "ISO3": "MWI"
+    },
+    "MALAYSIA": {
+      "ISO2": "MY",
+      "ISO3": "MYS"
+    },
+    "MALAYSIAN": {
+      "ISO2": "MY",
+      "ISO3": "MYS"
+    },
+    "MALDIVES": {
+      "ISO2": "MV",
+      "ISO3": "MDV"
+    },
+    "MALDIVIAN": {
+      "ISO2": "MV",
+      "ISO3": "MDV"
+    },
+    "MALI": {
+      "ISO2": "ML",
+      "ISO3": "MLI"
+    },
+    "MALIAN": {
+      "ISO2": "ML",
+      "ISO3": "MLI"
+    },
+    "MALTA": {
+      "ISO2": "MT",
+      "ISO3": "MLT"
+    },
+    "MALTESE": {
+      "ISO2": "MT",
+      "ISO3": "MLT"
+    },
+    "MAR": {
+      "ISO2": "MA",
+      "ISO3": "MAR"
+    },
+    "MARSHALL ISLANDS": {
+      "ISO2": "MH",
+      "ISO3": "MHL"
+    },
+    "MARSHALLESE": {
+      "ISO2": "MH",
+      "ISO3": "MHL"
+    },
+    "MARTINIQUE": {
+      "ISO2": "MQ",
+      "ISO3": "MTQ"
+    },
+    "MAURITANIA": {
+      "ISO2": "MR",
+      "ISO3": "MRT"
+    },
+    "MAURITANIAN": {
+      "ISO2": "MR",
+      "ISO3": "MRT"
+    },
+    "MAURITIAN": {
+      "ISO2": "MU",
+      "ISO3": "MUS"
+    },
+    "MAURITIUS": {
+      "ISO2": "MU",
+      "ISO3": "MUS"
+    },
+    "MAYOTTE": {
+      "ISO2": "YT",
+      "ISO3": "MYT"
+    },
+    "MC": {
+      "ISO2": "MC",
+      "ISO3": "MCO"
+    },
+    "MCO": {
+      "ISO2": "MC",
+      "ISO3": "MCO"
+    },
+    "MD": {
+      "ISO2": "MD",
+      "ISO3": "MDA"
+    },
+    "MDA": {
+      "ISO2": "MD",
+      "ISO3": "MDA"
+    },
+    "MDG": {
+      "ISO2": "MG",
+      "ISO3": "MDG"
+    },
+    "MDV": {
+      "ISO2": "MV",
+      "ISO3": "MDV"
+    },
+    "ME": {
+      "ISO2": "ME",
+      "ISO3": "MNE"
+    },
+    "MEX": {
+      "ISO2": "MX",
+      "ISO3": "MEX"
+    },
+    "MEXICAN": {
+      "ISO2": "MX",
+      "ISO3": "MEX"
+    },
+    "MEXICO": {
+      "ISO2": "MX",
+      "ISO3": "MEX"
+    },
+    "MF": {
+      "ISO2": "MF",
+      "ISO3": "MAF"
+    },
+    "MG": {
+      "ISO2": "MG",
+      "ISO3": "MDG"
+    },
+    "MH": {
+      "ISO2": "MH",
+      "ISO3": "MHL"
+    },
+    "MHL": {
+      "ISO2": "MH",
+      "ISO3": "MHL"
+    },
+    "MICRONESIA": {
+      "ISO2": "FM",
+      "ISO3": "FSM"
+    },
+    "MICRONESIA, FEDERATED STATES OF": {
+      "ISO2": "FM",
+      "ISO3": "FSM"
+    },
+    "MICRONESIAN": {
+      "ISO2": "FM",
+      "ISO3": "FSM"
+    },
+    "MK": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "MKD": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "ML": {
+      "ISO2": "ML",
+      "ISO3": "MLI"
+    },
+    "MLI": {
+      "ISO2": "ML",
+      "ISO3": "MLI"
+    },
+    "MLT": {
+      "ISO2": "MT",
+      "ISO3": "MLT"
+    },
+    "MM": {
+      "ISO2": "MM",
+      "ISO3": "MMR"
+    },
+    "MMR": {
+      "ISO2": "MM",
+      "ISO3": "MMR"
+    },
+    "MN": {
+      "ISO2": "MN",
+      "ISO3": "MNG"
+    },
+    "MNE": {
+      "ISO2": "ME",
+      "ISO3": "MNE"
+    },
+    "MNG": {
+      "ISO2": "MN",
+      "ISO3": "MNG"
+    },
+    "MNP": {
+      "ISO2": "MP",
+      "ISO3": "MNP"
+    },
+    "MO": {
+      "ISO2": "MO",
+      "ISO3": "MAC"
+    },
+    "MOLDOVA": {
+      "ISO2": "MD",
+      "ISO3": "MDA"
+    },
+    "MOLDOVA, REPUBLIC OF": {
+      "ISO2": "MD",
+      "ISO3": "MDA"
+    },
+    "MOLDOVAN": {
+      "ISO2": "MD",
+      "ISO3": "MDA"
+    },
+    "MONACAN": {
+      "ISO2": "MC",
+      "ISO3": "MCO"
+    },
+    "MONACO": {
+      "ISO2": "MC",
+      "ISO3": "MCO"
+    },
+    "MONGOLIA": {
+      "ISO2": "MN",
+      "ISO3": "MNG"
+    },
+    "MONGOLIAN": {
+      "ISO2": "MN",
+      "ISO3": "MNG"
+    },
+    "MONTENEGRO": {
+      "ISO2": "ME",
+      "ISO3": "MNE"
+    },
+    "MONTSERRAT": {
+      "ISO2": "MS",
+      "ISO3": "MSR"
+    },
+    "MOROCCAN": {
+      "ISO2": "MA",
+      "ISO3": "MAR"
+    },
+    "MOROCCO": {
+      "ISO2": "MA",
+      "ISO3": "MAR"
+    },
+    "MOSOTHO": {
+      "ISO2": "LS",
+      "ISO3": "LSO"
+    },
+    "MOTSWANA": {
+      "ISO2": "BW",
+      "ISO3": "BWA"
+    },
+    "MOZ": {
+      "ISO2": "MZ",
+      "ISO3": "MOZ"
+    },
+    "MOZAMBICAN": {
+      "ISO2": "MZ",
+      "ISO3": "MOZ"
+    },
+    "MOZAMBIQUE": {
+      "ISO2": "MZ",
+      "ISO3": "MOZ"
+    },
+    "MP": {
+      "ISO2": "MP",
+      "ISO3": "MNP"
+    },
+    "MQ": {
+      "ISO2": "MQ",
+      "ISO3": "MTQ"
+    },
+    "MR": {
+      "ISO2": "MR",
+      "ISO3": "MRT"
+    },
+    "MRT": {
+      "ISO2": "MR",
+      "ISO3": "MRT"
+    },
+    "MS": {
+      "ISO2": "MS",
+      "ISO3": "MSR"
+    },
+    "MSR": {
+      "ISO2": "MS",
+      "ISO3": "MSR"
+    },
+    "MT": {
+      "ISO2": "MT",
+      "ISO3": "MLT"
+    },
+    "MTQ": {
+      "ISO2": "MQ",
+      "ISO3": "MTQ"
+    },
+    "MU": {
+      "ISO2": "MU",
+      "ISO3": "MUS"
+    },
+    "MUS": {
+      "ISO2": "MU",
+      "ISO3": "MUS"
+    },
+    "MV": {
+      "ISO2": "MV",
+      "ISO3": "MDV"
+    },
+    "MW": {
+      "ISO2": "MW",
+      "ISO3": "MWI"
+    },
+    "MWI": {
+      "ISO2": "MW",
+      "ISO3": "MWI"
+    },
+    "MX": {
+      "ISO2": "MX",
+      "ISO3": "MEX"
+    },
+    "MY": {
+      "ISO2": "MY",
+      "ISO3": "MYS"
+    },
+    "MYANMAR": {
+      "ISO2": "MM",
+      "ISO3": "MMR"
+    },
+    "MYS": {
+      "ISO2": "MY",
+      "ISO3": "MYS"
+    },
+    "MYT": {
+      "ISO2": "YT",
+      "ISO3": "MYT"
+    },
+    "MZ": {
+      "ISO2": "MZ",
+      "ISO3": "MOZ"
+    },
+    "NA": {
+      "ISO2": "NA",
+      "ISO3": "NAM"
+    },
+    "NAM": {
+      "ISO2": "NA",
+      "ISO3": "NAM"
+    },
+    "NAMIBIA": {
+      "ISO2": "NA",
+      "ISO3": "NAM"
+    },
+    "NAMIBIAN": {
+      "ISO2": "NA",
+      "ISO3": "NAM"
+    },
+    "NAURU": {
+      "ISO2": "NR",
+      "ISO3": "NRU"
+    },
+    "NAURUAN": {
+      "ISO2": "NR",
+      "ISO3": "NRU"
+    },
+    "NC": {
+      "ISO2": "NC",
+      "ISO3": "NCL"
+    },
+    "NCL": {
+      "ISO2": "NC",
+      "ISO3": "NCL"
+    },
+    "NE": {
+      "ISO2": "NE",
+      "ISO3": "NER"
+    },
+    "NEPAL": {
+      "ISO2": "NP",
+      "ISO3": "NPL"
+    },
+    "NEPALESE": {
+      "ISO2": "NP",
+      "ISO3": "NPL"
+    },
+    "NER": {
+      "ISO2": "NE",
+      "ISO3": "NER"
+    },
+    "NETHERLANDS": {
+      "ISO2": "NL",
+      "ISO3": "NLD"
+    },
+    "NEW CALEDONIA": {
+      "ISO2": "NC",
+      "ISO3": "NCL"
+    },
+    "NEW ZEALAND": {
+      "ISO2": "NZ",
+      "ISO3": "NZL"
+    },
+    "NEW ZEALANDER": {
+      "ISO2": "NZ",
+      "ISO3": "NZL"
+    },
+    "NF": {
+      "ISO2": "NF",
+      "ISO3": "NFK"
+    },
+    "NFK": {
+      "ISO2": "NF",
+      "ISO3": "NFK"
+    },
+    "NG": {
+      "ISO2": "NG",
+      "ISO3": "NGA"
+    },
+    "NGA": {
+      "ISO2": "NG",
+      "ISO3": "NGA"
+    },
+    "NI": {
+      "ISO2": "NI",
+      "ISO3": "NIC"
+    },
+    "NI-VANUATU": {
+      "ISO2": "VU",
+      "ISO3": "VUT"
+    },
+    "NIC": {
+      "ISO2": "NI",
+      "ISO3": "NIC"
+    },
+    "NICARAGUA": {
+      "ISO2": "NI",
+      "ISO3": "NIC"
+    },
+    "NICARAGUAN": {
+      "ISO2": "NI",
+      "ISO3": "NIC"
+    },
+    "NIGER": {
+      "ISO2": "NE",
+      "ISO3": "NER"
+    },
+    "NIGERIA": {
+      "ISO2": "NG",
+      "ISO3": "NGA"
+    },
+    "NIGERIAN": {
+      "ISO2": "NG",
+      "ISO3": "NGA"
+    },
+    "NIGERIEN": {
+      "ISO2": "NG",
+      "ISO3": "NGA"
+    },
+    "NIU": {
+      "ISO2": "NU",
+      "ISO3": "NIU"
+    },
+    "NIUE": {
+      "ISO2": "NU",
+      "ISO3": "NIU"
+    },
+    "NL": {
+      "ISO2": "NL",
+      "ISO3": "NLD"
+    },
+    "NLD": {
+      "ISO2": "NL",
+      "ISO3": "NLD"
+    },
+    "NO": {
+      "ISO2": "NO",
+      "ISO3": "NOR"
+    },
+    "NOR": {
+      "ISO2": "NO",
+      "ISO3": "NOR"
+    },
+    "NORFOLK ISLAND": {
+      "ISO2": "NF",
+      "ISO3": "NFK"
+    },
+    "NORTH KOREA": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "NORTH KOREAN": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "NORTH MACEDONIA": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "NORTHERN IRISH": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "NORTHERN MARIANA ISLANDS": {
+      "ISO2": "MP",
+      "ISO3": "MNP"
+    },
+    "NORWAY": {
+      "ISO2": "NO",
+      "ISO3": "NOR"
+    },
+    "NORWEGIAN": {
+      "ISO2": "NO",
+      "ISO3": "NOR"
+    },
+    "NP": {
+      "ISO2": "NP",
+      "ISO3": "NPL"
+    },
+    "NPL": {
+      "ISO2": "NP",
+      "ISO3": "NPL"
+    },
+    "NR": {
+      "ISO2": "NR",
+      "ISO3": "NRU"
+    },
+    "NRU": {
+      "ISO2": "NR",
+      "ISO3": "NRU"
+    },
+    "NU": {
+      "ISO2": "NU",
+      "ISO3": "NIU"
+    },
+    "NZ": {
+      "ISO2": "NZ",
+      "ISO3": "NZL"
+    },
+    "NZL": {
+      "ISO2": "NZ",
+      "ISO3": "NZL"
+    },
+    "OM": {
+      "ISO2": "OM",
+      "ISO3": "OMN"
+    },
+    "OMAN": {
+      "ISO2": "OM",
+      "ISO3": "OMN"
+    },
+    "OMANI": {
+      "ISO2": "OM",
+      "ISO3": "OMN"
+    },
+    "OMN": {
+      "ISO2": "OM",
+      "ISO3": "OMN"
+    },
+    "PA": {
+      "ISO2": "PA",
+      "ISO3": "PAN"
+    },
+    "PAK": {
+      "ISO2": "PK",
+      "ISO3": "PAK"
+    },
+    "PAKISTAN": {
+      "ISO2": "PK",
+      "ISO3": "PAK"
+    },
+    "PAKISTANI": {
+      "ISO2": "PK",
+      "ISO3": "PAK"
+    },
+    "PALAU": {
+      "ISO2": "PW",
+      "ISO3": "PLW"
+    },
+    "PALAUAN": {
+      "ISO2": "PW",
+      "ISO3": "PLW"
+    },
+    "PALESTINE": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "PALESTINE, STATE OF": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "PALESTINIAN": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "PALESTINIAN TERRITORY, OCCUPIED": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "PAN": {
+      "ISO2": "PA",
+      "ISO3": "PAN"
+    },
+    "PANAMA": {
+      "ISO2": "PA",
+      "ISO3": "PAN"
+    },
+    "PANAMANIAN": {
+      "ISO2": "PA",
+      "ISO3": "PAN"
+    },
+    "PAPUA NEW GUINEA": {
+      "ISO2": "PG",
+      "ISO3": "PNG"
+    },
+    "PAPUA NEW GUINEAN": {
+      "ISO2": "PG",
+      "ISO3": "PNG"
+    },
+    "PARAGUAY": {
+      "ISO2": "PY",
+      "ISO3": "PRY"
+    },
+    "PARAGUAYAN": {
+      "ISO2": "PY",
+      "ISO3": "PRY"
+    },
+    "PCN": {
+      "ISO2": "PN",
+      "ISO3": "PCN"
+    },
+    "PE": {
+      "ISO2": "PE",
+      "ISO3": "PER"
+    },
+    "PEOPLE'S DEMOCRATIC REPUBLIC OF ALGERIA": {
+      "ISO2": "DZ",
+      "ISO3": "DZA"
+    },
+    "PEOPLE'S REPUBLIC OF BANGLADESH": {
+      "ISO2": "BD",
+      "ISO3": "BGD"
+    },
+    "PEOPLE'S REPUBLIC OF CHINA": {
+      "ISO2": "CN",
+      "ISO3": "CHN"
+    },
+    "PER": {
+      "ISO2": "PE",
+      "ISO3": "PER"
+    },
+    "PERU": {
+      "ISO2": "PE",
+      "ISO3": "PER"
+    },
+    "PERUVIAN": {
+      "ISO2": "PE",
+      "ISO3": "PER"
+    },
+    "PF": {
+      "ISO2": "PF",
+      "ISO3": "PYF"
+    },
+    "PG": {
+      "ISO2": "PG",
+      "ISO3": "PNG"
+    },
+    "PH": {
+      "ISO2": "PH",
+      "ISO3": "PHL"
+    },
+    "PHILIPPINES": {
+      "ISO2": "PH",
+      "ISO3": "PHL"
+    },
+    "PHL": {
+      "ISO2": "PH",
+      "ISO3": "PHL"
+    },
+    "PITCAIRN": {
+      "ISO2": "PN",
+      "ISO3": "PCN"
+    },
+    "PK": {
+      "ISO2": "PK",
+      "ISO3": "PAK"
+    },
+    "PL": {
+      "ISO2": "PL",
+      "ISO3": "POL"
+    },
+    "PLURINATIONAL STATE OF BOLIVIA": {
+      "ISO2": "BO",
+      "ISO3": "BOL"
+    },
+    "PLW": {
+      "ISO2": "PW",
+      "ISO3": "PLW"
+    },
+    "PM": {
+      "ISO2": "PM",
+      "ISO3": "SPM"
+    },
+    "PN": {
+      "ISO2": "PN",
+      "ISO3": "PCN"
+    },
+    "PNG": {
+      "ISO2": "PG",
+      "ISO3": "PNG"
+    },
+    "POL": {
+      "ISO2": "PL",
+      "ISO3": "POL"
+    },
+    "POLAND": {
+      "ISO2": "PL",
+      "ISO3": "POL"
+    },
+    "POLISH": {
+      "ISO2": "PL",
+      "ISO3": "POL"
+    },
+    "PORTUGAL": {
+      "ISO2": "PT",
+      "ISO3": "PRT"
+    },
+    "PORTUGUESE": {
+      "ISO2": "PT",
+      "ISO3": "PRT"
+    },
+    "PORTUGUESE REPUBLIC": {
+      "ISO2": "PT",
+      "ISO3": "PRT"
+    },
+    "PR": {
+      "ISO2": "PR",
+      "ISO3": "PRI"
+    },
+    "PRI": {
+      "ISO2": "PR",
+      "ISO3": "PRI"
+    },
+    "PRINCIPALITY OF ANDORRA": {
+      "ISO2": "AD",
+      "ISO3": "AND"
+    },
+    "PRINCIPALITY OF LIECHTENSTEIN": {
+      "ISO2": "LI",
+      "ISO3": "LIE"
+    },
+    "PRINCIPALITY OF MONACO": {
+      "ISO2": "MC",
+      "ISO3": "MCO"
+    },
+    "PRK": {
+      "ISO2": "KP",
+      "ISO3": "PRK"
+    },
+    "PRT": {
+      "ISO2": "PT",
+      "ISO3": "PRT"
+    },
+    "PRY": {
+      "ISO2": "PY",
+      "ISO3": "PRY"
+    },
+    "PS": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "PSE": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "PT": {
+      "ISO2": "PT",
+      "ISO3": "PRT"
+    },
+    "PUERTO RICO": {
+      "ISO2": "PR",
+      "ISO3": "PRI"
+    },
+    "PW": {
+      "ISO2": "PW",
+      "ISO3": "PLW"
+    },
+    "PY": {
+      "ISO2": "PY",
+      "ISO3": "PRY"
+    },
+    "PYF": {
+      "ISO2": "PF",
+      "ISO3": "PYF"
+    },
+    "QA": {
+      "ISO2": "QA",
+      "ISO3": "QAT"
+    },
+    "QAT": {
+      "ISO2": "QA",
+      "ISO3": "QAT"
+    },
+    "QATAR": {
+      "ISO2": "QA",
+      "ISO3": "QAT"
+    },
+    "QATARI": {
+      "ISO2": "QA",
+      "ISO3": "QAT"
+    },
+    "RE": {
+      "ISO2": "RE",
+      "ISO3": "REU"
+    },
+    "REPUBLIC OF ALBANIA": {
+      "ISO2": "AL",
+      "ISO3": "ALB"
+    },
+    "REPUBLIC OF ANGOLA": {
+      "ISO2": "AO",
+      "ISO3": "AGO"
+    },
+    "REPUBLIC OF ARMENIA": {
+      "ISO2": "AM",
+      "ISO3": "ARM"
+    },
+    "REPUBLIC OF AUSTRIA": {
+      "ISO2": "AT",
+      "ISO3": "AUT"
+    },
+    "REPUBLIC OF AZERBAIJAN": {
+      "ISO2": "AZ",
+      "ISO3": "AZE"
+    },
+    "REPUBLIC OF BELARUS": {
+      "ISO2": "BY",
+      "ISO3": "BLR"
+    },
+    "REPUBLIC OF BENIN": {
+      "ISO2": "BJ",
+      "ISO3": "BEN"
+    },
+    "REPUBLIC OF BOSNIA AND HERZEGOVINA": {
+      "ISO2": "BA",
+      "ISO3": "BIH"
+    },
+    "REPUBLIC OF BOTSWANA": {
+      "ISO2": "BW",
+      "ISO3": "BWA"
+    },
+    "REPUBLIC OF BULGARIA": {
+      "ISO2": "BG",
+      "ISO3": "BGR"
+    },
+    "REPUBLIC OF BURUNDI": {
+      "ISO2": "BI",
+      "ISO3": "BDI"
+    },
+    "REPUBLIC OF CABO VERDE": {
+      "ISO2": "CV",
+      "ISO3": "CPV"
+    },
+    "REPUBLIC OF CAMEROON": {
+      "ISO2": "CM",
+      "ISO3": "CMR"
+    },
+    "REPUBLIC OF CHAD": {
+      "ISO2": "TD",
+      "ISO3": "TCD"
+    },
+    "REPUBLIC OF CHILE": {
+      "ISO2": "CL",
+      "ISO3": "CHL"
+    },
+    "REPUBLIC OF COLOMBIA": {
+      "ISO2": "CO",
+      "ISO3": "COL"
+    },
+    "REPUBLIC OF COSTA RICA": {
+      "ISO2": "CR",
+      "ISO3": "CRI"
+    },
+    "REPUBLIC OF CROATIA": {
+      "ISO2": "HR",
+      "ISO3": "HRV"
+    },
+    "REPUBLIC OF CUBA": {
+      "ISO2": "CU",
+      "ISO3": "CUB"
+    },
+    "REPUBLIC OF CYPRUS": {
+      "ISO2": "CY",
+      "ISO3": "CYP"
+    },
+    "REPUBLIC OF CÔTE D'IVOIRE": {
+      "ISO2": "CI",
+      "ISO3": "CIV"
+    },
+    "REPUBLIC OF DJIBOUTI": {
+      "ISO2": "DJ",
+      "ISO3": "DJI"
+    },
+    "REPUBLIC OF ECUADOR": {
+      "ISO2": "EC",
+      "ISO3": "ECU"
+    },
+    "REPUBLIC OF EL SALVADOR": {
+      "ISO2": "SV",
+      "ISO3": "SLV"
+    },
+    "REPUBLIC OF EQUATORIAL GUINEA": {
+      "ISO2": "GQ",
+      "ISO3": "GNQ"
+    },
+    "REPUBLIC OF ESTONIA": {
+      "ISO2": "EE",
+      "ISO3": "EST"
+    },
+    "REPUBLIC OF FIJI": {
+      "ISO2": "FJ",
+      "ISO3": "FJI"
+    },
+    "REPUBLIC OF FINLAND": {
+      "ISO2": "FI",
+      "ISO3": "FIN"
+    },
+    "REPUBLIC OF GHANA": {
+      "ISO2": "GH",
+      "ISO3": "GHA"
+    },
+    "REPUBLIC OF GUATEMALA": {
+      "ISO2": "GT",
+      "ISO3": "GTM"
+    },
+    "REPUBLIC OF GUINEA": {
+      "ISO2": "GN",
+      "ISO3": "GIN"
+    },
+    "REPUBLIC OF GUINEA-BISSAU": {
+      "ISO2": "GW",
+      "ISO3": "GNB"
+    },
+    "REPUBLIC OF GUYANA": {
+      "ISO2": "GY",
+      "ISO3": "GUY"
+    },
+    "REPUBLIC OF HAITI": {
+      "ISO2": "HT",
+      "ISO3": "HTI"
+    },
+    "REPUBLIC OF HONDURAS": {
+      "ISO2": "HN",
+      "ISO3": "HND"
+    },
+    "REPUBLIC OF ICELAND": {
+      "ISO2": "IS",
+      "ISO3": "ISL"
+    },
+    "REPUBLIC OF INDIA": {
+      "ISO2": "IN",
+      "ISO3": "IND"
+    },
+    "REPUBLIC OF INDONESIA": {
+      "ISO2": "ID",
+      "ISO3": "IDN"
+    },
+    "REPUBLIC OF IRAQ": {
+      "ISO2": "IQ",
+      "ISO3": "IRQ"
+    },
+    "REPUBLIC OF KAZAKHSTAN": {
+      "ISO2": "KZ",
+      "ISO3": "KAZ"
+    },
+    "REPUBLIC OF KENYA": {
+      "ISO2": "KE",
+      "ISO3": "KEN"
+    },
+    "REPUBLIC OF KIRIBATI": {
+      "ISO2": "KI",
+      "ISO3": "KIR"
+    },
+    "REPUBLIC OF LATVIA": {
+      "ISO2": "LV",
+      "ISO3": "LVA"
+    },
+    "REPUBLIC OF LIBERIA": {
+      "ISO2": "LR",
+      "ISO3": "LBR"
+    },
+    "REPUBLIC OF LITHUANIA": {
+      "ISO2": "LT",
+      "ISO3": "LTU"
+    },
+    "REPUBLIC OF MADAGASCAR": {
+      "ISO2": "MG",
+      "ISO3": "MDG"
+    },
+    "REPUBLIC OF MALAWI": {
+      "ISO2": "MW",
+      "ISO3": "MWI"
+    },
+    "REPUBLIC OF MALDIVES": {
+      "ISO2": "MV",
+      "ISO3": "MDV"
+    },
+    "REPUBLIC OF MALI": {
+      "ISO2": "ML",
+      "ISO3": "MLI"
+    },
+    "REPUBLIC OF MALTA": {
+      "ISO2": "MT",
+      "ISO3": "MLT"
+    },
+    "REPUBLIC OF MAURITIUS": {
+      "ISO2": "MU",
+      "ISO3": "MUS"
+    },
+    "REPUBLIC OF MOLDOVA": {
+      "ISO2": "MD",
+      "ISO3": "MDA"
+    },
+    "REPUBLIC OF MOZAMBIQUE": {
+      "ISO2": "MZ",
+      "ISO3": "MOZ"
+    },
+    "REPUBLIC OF MYANMAR": {
+      "ISO2": "MM",
+      "ISO3": "MMR"
+    },
+    "REPUBLIC OF NAMIBIA": {
+      "ISO2": "NA",
+      "ISO3": "NAM"
+    },
+    "REPUBLIC OF NAURU": {
+      "ISO2": "NR",
+      "ISO3": "NRU"
+    },
+    "REPUBLIC OF NICARAGUA": {
+      "ISO2": "NI",
+      "ISO3": "NIC"
+    },
+    "REPUBLIC OF NORTH MACEDONIA": {
+      "ISO2": "MK",
+      "ISO3": "MKD"
+    },
+    "REPUBLIC OF PALAU": {
+      "ISO2": "PW",
+      "ISO3": "PLW"
+    },
+    "REPUBLIC OF PANAMA": {
+      "ISO2": "PA",
+      "ISO3": "PAN"
+    },
+    "REPUBLIC OF PARAGUAY": {
+      "ISO2": "PY",
+      "ISO3": "PRY"
+    },
+    "REPUBLIC OF PERU": {
+      "ISO2": "PE",
+      "ISO3": "PER"
+    },
+    "REPUBLIC OF POLAND": {
+      "ISO2": "PL",
+      "ISO3": "POL"
+    },
+    "REPUBLIC OF SAN MARINO": {
+      "ISO2": "SM",
+      "ISO3": "SMR"
+    },
+    "REPUBLIC OF SENEGAL": {
+      "ISO2": "SN",
+      "ISO3": "SEN"
+    },
+    "REPUBLIC OF SERBIA": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "REPUBLIC OF SEYCHELLES": {
+      "ISO2": "SC",
+      "ISO3": "SYC"
+    },
+    "REPUBLIC OF SIERRA LEONE": {
+      "ISO2": "SL",
+      "ISO3": "SLE"
+    },
+    "REPUBLIC OF SINGAPORE": {
+      "ISO2": "SG",
+      "ISO3": "SGP"
+    },
+    "REPUBLIC OF SLOVENIA": {
+      "ISO2": "SI",
+      "ISO3": "SVN"
+    },
+    "REPUBLIC OF SOUTH AFRICA": {
+      "ISO2": "ZA",
+      "ISO3": "ZAF"
+    },
+    "REPUBLIC OF SOUTH SUDAN": {
+      "ISO2": "SS",
+      "ISO3": "SSD"
+    },
+    "REPUBLIC OF SURINAME": {
+      "ISO2": "SR",
+      "ISO3": "SUR"
+    },
+    "REPUBLIC OF TAJIKISTAN": {
+      "ISO2": "TJ",
+      "ISO3": "TJK"
+    },
+    "REPUBLIC OF THE CONGO": {
+      "ISO2": "CG",
+      "ISO3": "COG"
+    },
+    "REPUBLIC OF THE GAMBIA": {
+      "ISO2": "GM",
+      "ISO3": "GMB"
+    },
+    "REPUBLIC OF THE MARSHALL ISLANDS": {
+      "ISO2": "MH",
+      "ISO3": "MHL"
+    },
+    "REPUBLIC OF THE NIGER": {
+      "ISO2": "NE",
+      "ISO3": "NER"
+    },
+    "REPUBLIC OF THE PHILIPPINES": {
+      "ISO2": "PH",
+      "ISO3": "PHL"
+    },
+    "REPUBLIC OF THE SUDAN": {
+      "ISO2": "SD",
+      "ISO3": "SDN"
+    },
+    "REPUBLIC OF TRINIDAD AND TOBAGO": {
+      "ISO2": "TT",
+      "ISO3": "TTO"
+    },
+    "REPUBLIC OF TUNISIA": {
+      "ISO2": "TN",
+      "ISO3": "TUN"
+    },
+    "REPUBLIC OF TURKEY": {
+      "ISO2": "TR",
+      "ISO3": "TUR"
+    },
+    "REPUBLIC OF UGANDA": {
+      "ISO2": "UG",
+      "ISO3": "UGA"
+    },
+    "REPUBLIC OF UZBEKISTAN": {
+      "ISO2": "UZ",
+      "ISO3": "UZB"
+    },
+    "REPUBLIC OF VANUATU": {
+      "ISO2": "VU",
+      "ISO3": "VUT"
+    },
+    "REPUBLIC OF YEMEN": {
+      "ISO2": "YE",
+      "ISO3": "YEM"
+    },
+    "REPUBLIC OF ZAMBIA": {
+      "ISO2": "ZM",
+      "ISO3": "ZMB"
+    },
+    "REPUBLIC OF ZIMBABWE": {
+      "ISO2": "ZW",
+      "ISO3": "ZWE"
+    },
+    "REU": {
+      "ISO2": "RE",
+      "ISO3": "REU"
+    },
+    "REUNION": {
+      "ISO2": "RE",
+      "ISO3": "REU"
+    },
+    "RO": {
+      "ISO2": "RO",
+      "ISO3": "ROU"
+    },
+    "ROMANIA": {
+      "ISO2": "RO",
+      "ISO3": "ROU"
+    },
+    "ROMANIAN": {
+      "ISO2": "RO",
+      "ISO3": "ROU"
+    },
+    "ROU": {
+      "ISO2": "RO",
+      "ISO3": "ROU"
+    },
+    "RS": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "RU": {
+      "ISO2": "RU",
+      "ISO3": "RUS"
+    },
+    "RUS": {
+      "ISO2": "RU",
+      "ISO3": "RUS"
+    },
+    "RUSSIA": {
+      "ISO2": "RU",
+      "ISO3": "RUS"
+    },
+    "RUSSIAN": {
+      "ISO2": "RU",
+      "ISO3": "RUS"
+    },
+    "RUSSIAN FEDERATION": {
+      "ISO2": "RU",
+      "ISO3": "RUS"
+    },
+    "RW": {
+      "ISO2": "RW",
+      "ISO3": "RWA"
+    },
+    "RWA": {
+      "ISO2": "RW",
+      "ISO3": "RWA"
+    },
+    "RWANDA": {
+      "ISO2": "RW",
+      "ISO3": "RWA"
+    },
+    "RWANDAN": {
+      "ISO2": "RW",
+      "ISO3": "RWA"
+    },
+    "RWANDESE REPUBLIC": {
+      "ISO2": "RW",
+      "ISO3": "RWA"
+    },
+    "RÉUNION": {
+      "ISO2": "RE",
+      "ISO3": "REU"
+    },
+    "SA": {
+      "ISO2": "SA",
+      "ISO3": "SAU"
+    },
+    "SAINT BARTHÉLEMY": {
+      "ISO2": "BL",
+      "ISO3": "BLM"
+    },
+    "SAINT HELENA": {
+      "ISO2": "SH",
+      "ISO3": "SHN"
+    },
+    "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA": {
+      "ISO2": "SH",
+      "ISO3": "SHN"
+    },
+    "SAINT KITTS AND NEVIS": {
+      "ISO2": "KN",
+      "ISO3": "KNA"
+    },
+    "ST KITTS AND NEVIS": {
+      "ISO2": "KN",
+      "ISO3": "KNA"
+    },
+    "SAINT LUCIA": {
+      "ISO2": "LC",
+      "ISO3": "LCA"
+    },
+    "SAINT LUCIAN": {
+      "ISO2": "LC",
+      "ISO3": "LCA"
+    },
+    "SAINT MARTIN (FRENCH PART)": {
+      "ISO2": "MF",
+      "ISO3": "MAF"
+    },
+    "SAINT PIERRE AND MIQUELON": {
+      "ISO2": "PM",
+      "ISO3": "SPM"
+    },
+    "SAINT VINCENT AND THE GRENADINES": {
+      "ISO2": "VC",
+      "ISO3": "VCT"
+    },
+    "SALVADORAN": {
+      "ISO2": "SV",
+      "ISO3": "SLV"
+    },
+    "SAMOA": {
+      "ISO2": "WS",
+      "ISO3": "WSM"
+    },
+    "SAM": {
+      "ISO2": "WS",
+      "ISO3": "WSM"
+    },
+    "SAMOAN": {
+      "ISO2": "WS",
+      "ISO3": "WSM"
+    },
+    "SAN MARINESE": {
+      "ISO2": "SM",
+      "ISO3": "SMR"
+    },
+    "SAN MARINO": {
+      "ISO2": "SM",
+      "ISO3": "SMR"
+    },
+    "SAO TOME AND PRINCIPE": {
+      "ISO2": "ST",
+      "ISO3": "STP"
+    },
+    "SAO TOMEAN": {
+      "ISO2": "ST",
+      "ISO3": "STP"
+    },
+    "SAU": {
+      "ISO2": "SA",
+      "ISO3": "SAU"
+    },
+    "SAUDI": {
+      "ISO2": "SA",
+      "ISO3": "SAU"
+    },
+    "SAUDI ARABIA": {
+      "ISO2": "SA",
+      "ISO3": "SAU"
+    },
+    "SAUDI ARABIAN": {
+      "ISO2": "SA",
+      "ISO3": "SAU"
+    },
+    "SB": {
+      "ISO2": "SB",
+      "ISO3": "SLB"
+    },
+    "SC": {
+      "ISO2": "SC",
+      "ISO3": "SYC"
+    },
+    "SCOTTISH": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "SD": {
+      "ISO2": "SD",
+      "ISO3": "SDN"
+    },
+    "SDN": {
+      "ISO2": "SD",
+      "ISO3": "SDN"
+    },
+    "SE": {
+      "ISO2": "SE",
+      "ISO3": "SWE"
+    },
+    "SEN": {
+      "ISO2": "SN",
+      "ISO3": "SEN"
+    },
+    "SENEGAL": {
+      "ISO2": "SN",
+      "ISO3": "SEN"
+    },
+    "SENEGALESE": {
+      "ISO2": "SN",
+      "ISO3": "SEN"
+    },
+    "SERBIA": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "SERBIA AND MONTENEGRO": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "SERBIAN": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "SEYCHELLES": {
+      "ISO2": "SC",
+      "ISO3": "SYC"
+    },
+    "SEYCHELLOIS": {
+      "ISO2": "SC",
+      "ISO3": "SYC"
+    },
+    "SG": {
+      "ISO2": "SG",
+      "ISO3": "SGP"
+    },
+    "SGP": {
+      "ISO2": "SG",
+      "ISO3": "SGP"
+    },
+    "SGS": {
+      "ISO2": "GS",
+      "ISO3": "SGS"
+    },
+    "SH": {
+      "ISO2": "SH",
+      "ISO3": "SHN"
+    },
+    "SHN": {
+      "ISO2": "SH",
+      "ISO3": "SHN"
+    },
+    "SI": {
+      "ISO2": "SI",
+      "ISO3": "SVN"
+    },
+    "SIERRA LEONE": {
+      "ISO2": "SL",
+      "ISO3": "SLE"
+    },
+    "SIERRA LEONEAN": {
+      "ISO2": "SL",
+      "ISO3": "SLE"
+    },
+    "SINGAPORE": {
+      "ISO2": "SG",
+      "ISO3": "SGP"
+    },
+    "SINGAPOREAN": {
+      "ISO2": "SG",
+      "ISO3": "SGP"
+    },
+    "SINGAPURA": {
+      "ISO2": "SG",
+      "ISO3": "SGP"
+    },
+    "SINT MAARTEN (DUTCH PART)": {
+      "ISO2": "SX",
+      "ISO3": "SXM"
+    },
+    "SJ": {
+      "ISO2": "SJ",
+      "ISO3": "SJM"
+    },
+    "SJM": {
+      "ISO2": "SJ",
+      "ISO3": "SJM"
+    },
+    "SK": {
+      "ISO2": "SK",
+      "ISO3": "SVK"
+    },
+    "SL": {
+      "ISO2": "SL",
+      "ISO3": "SLE"
+    },
+    "SLB": {
+      "ISO2": "SB",
+      "ISO3": "SLB"
+    },
+    "SLE": {
+      "ISO2": "SL",
+      "ISO3": "SLE"
+    },
+    "SLOVAK REPUBLIC": {
+      "ISO2": "SK",
+      "ISO3": "SVK"
+    },
+    "SLOVAKIA": {
+      "ISO2": "SK",
+      "ISO3": "SVK"
+    },
+    "SLOVAKIAN": {
+      "ISO2": "SK",
+      "ISO3": "SVK"
+    },
+    "SLOVENIA": {
+      "ISO2": "SI",
+      "ISO3": "SVN"
+    },
+    "SLOVENIAN": {
+      "ISO2": "SI",
+      "ISO3": "SVN"
+    },
+    "SLV": {
+      "ISO2": "SV",
+      "ISO3": "SLV"
+    },
+    "SM": {
+      "ISO2": "SM",
+      "ISO3": "SMR"
+    },
+    "SMR": {
+      "ISO2": "SM",
+      "ISO3": "SMR"
+    },
+    "SN": {
+      "ISO2": "SN",
+      "ISO3": "SEN"
+    },
+    "SO": {
+      "ISO2": "SO",
+      "ISO3": "SOM"
+    },
+    "SOCIALIST REPUBLIC OF VIET NAM": {
+      "ISO2": "VN",
+      "ISO3": "VNM"
+    },
+    "SOLOMON ISLANDER": {
+      "ISO2": "SB",
+      "ISO3": "SLB"
+    },
+    "SOLOMON ISLANDS": {
+      "ISO2": "SB",
+      "ISO3": "SLB"
+    },
+    "SOM": {
+      "ISO2": "SO",
+      "ISO3": "SOM"
+    },
+    "SOMALI": {
+      "ISO2": "SO",
+      "ISO3": "SOM"
+    },
+    "SOMALIA": {
+      "ISO2": "SO",
+      "ISO3": "SOM"
+    },
+    "SOUTH AFRICA": {
+      "ISO2": "ZA",
+      "ISO3": "ZAF"
+    },
+    "SOUTH AFRICAN": {
+      "ISO2": "ZA",
+      "ISO3": "ZAF"
+    },
+    "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS": {
+      "ISO2": "GS",
+      "ISO3": "SGS"
+    },
+    "SOUTH KOREA": {
+      "ISO2": "KR",
+      "ISO3": "KOR"
+    },
+    "SOUTH KOREAN": {
+      "ISO2": "KR",
+      "ISO3": "KOR"
+    },
+    "SOUTH SUDAN": {
+      "ISO2": "SS",
+      "ISO3": "SSD"
+    },
+    "SPAIN": {
+      "ISO2": "ES",
+      "ISO3": "ESP"
+    },
+    "SPANISH": {
+      "ISO2": "ES",
+      "ISO3": "ESP"
+    },
+    "SPM": {
+      "ISO2": "PM",
+      "ISO3": "SPM"
+    },
+    "SR": {
+      "ISO2": "SR",
+      "ISO3": "SUR"
+    },
+    "SRB": {
+      "ISO2": "RS",
+      "ISO3": "SRB"
+    },
+    "SRI LANKA": {
+      "ISO2": "LK",
+      "ISO3": "LKA"
+    },
+    "SRI LANKAN": {
+      "ISO2": "LK",
+      "ISO3": "LKA"
+    },
+    "SS": {
+      "ISO2": "SS",
+      "ISO3": "SSD"
+    },
+    "SSD": {
+      "ISO2": "SS",
+      "ISO3": "SSD"
+    },
+    "ST": {
+      "ISO2": "ST",
+      "ISO3": "STP"
+    },
+    "STATE OF ISRAEL": {
+      "ISO2": "IL",
+      "ISO3": "ISR"
+    },
+    "STATE OF KUWAIT": {
+      "ISO2": "KW",
+      "ISO3": "KWT"
+    },
+    "STATE OF QATAR": {
+      "ISO2": "QA",
+      "ISO3": "QAT"
+    },
+    "STP": {
+      "ISO2": "ST",
+      "ISO3": "STP"
+    },
+    "SUDAN": {
+      "ISO2": "SD",
+      "ISO3": "SDN"
+    },
+    "SUDANESE": {
+      "ISO2": "SS",
+      "ISO3": "SSD"
+    },
+    "SULTANATE OF OMAN": {
+      "ISO2": "OM",
+      "ISO3": "OMN"
+    },
+    "SUR": {
+      "ISO2": "SR",
+      "ISO3": "SUR"
+    },
+    "SURINAME": {
+      "ISO2": "SR",
+      "ISO3": "SUR"
+    },
+    "SURINAMER": {
+      "ISO2": "SR",
+      "ISO3": "SUR"
+    },
+    "SV": {
+      "ISO2": "SV",
+      "ISO3": "SLV"
+    },
+    "SVALBARD AND JAN MAYEN": {
+      "ISO2": "SJ",
+      "ISO3": "SJM"
+    },
+    "SVK": {
+      "ISO2": "SK",
+      "ISO3": "SVK"
+    },
+    "SVN": {
+      "ISO2": "SI",
+      "ISO3": "SVN"
+    },
+    "SWAZI": {
+      "ISO2": "SZ",
+      "ISO3": "SWZ"
+    },
+    "SWAZILAND": {
+      "ISO2": "SZ",
+      "ISO3": "SWZ"
+    },
+    "SWE": {
+      "ISO2": "SE",
+      "ISO3": "SWE"
+    },
+    "SWEDEN": {
+      "ISO2": "SE",
+      "ISO3": "SWE"
+    },
+    "SWEDISH": {
+      "ISO2": "SE",
+      "ISO3": "SWE"
+    },
+    "SWISS": {
+      "ISO2": "CH",
+      "ISO3": "CHE"
+    },
+    "SWISS CONFEDERATION": {
+      "ISO2": "CH",
+      "ISO3": "CHE"
+    },
+    "SWITZERLAND": {
+      "ISO2": "CH",
+      "ISO3": "CHE"
+    },
+    "SWZ": {
+      "ISO2": "SZ",
+      "ISO3": "SWZ"
+    },
+    "SX": {
+      "ISO2": "SX",
+      "ISO3": "SXM"
+    },
+    "SXM": {
+      "ISO2": "SX",
+      "ISO3": "SXM"
+    },
+    "SY": {
+      "ISO2": "SY",
+      "ISO3": "SYR"
+    },
+    "SYC": {
+      "ISO2": "SC",
+      "ISO3": "SYC"
+    },
+    "SYR": {
+      "ISO2": "SY",
+      "ISO3": "SYR"
+    },
+    "SYRIA": {
+      "ISO2": "SY",
+      "ISO3": "SYR"
+    },
+    "SYRIAN": {
+      "ISO2": "SY",
+      "ISO3": "SYR"
+    },
+    "SYRIAN ARAB REPUBLIC": {
+      "ISO2": "SY",
+      "ISO3": "SYR"
+    },
+    "SZ": {
+      "ISO2": "SZ",
+      "ISO3": "SWZ"
+    },
+    "TAIWAN": {
+      "ISO2": "TW",
+      "ISO3": "TWN"
+    },
+    "TAIWAN, PROVINCE OF CHINA": {
+      "ISO2": "TW",
+      "ISO3": "TWN"
+    },
+    "TAIWANESE": {
+      "ISO2": "TW",
+      "ISO3": "TWN"
+    },
+    "TAJIK": {
+      "ISO2": "TJ",
+      "ISO3": "TJK"
+    },
+    "TAJIKISTAN": {
+      "ISO2": "TJ",
+      "ISO3": "TJK"
+    },
+    "TANZANIA": {
+      "ISO2": "TZ",
+      "ISO3": "TZA"
+    },
+    "TANZANIA, UNITED REPUBLIC OF": {
+      "ISO2": "TZ",
+      "ISO3": "TZA"
+    },
+    "TANZANIAN": {
+      "ISO2": "TZ",
+      "ISO3": "TZA"
+    },
+    "TC": {
+      "ISO2": "TC",
+      "ISO3": "TCA"
+    },
+    "TCA": {
+      "ISO2": "TC",
+      "ISO3": "TCA"
+    },
+    "TCD": {
+      "ISO2": "TD",
+      "ISO3": "TCD"
+    },
+    "TD": {
+      "ISO2": "TD",
+      "ISO3": "TCD"
+    },
+    "TF": {
+      "ISO2": "TF",
+      "ISO3": "ATF"
+    },
+    "TG": {
+      "ISO2": "TG",
+      "ISO3": "TGO"
+    },
+    "TGO": {
+      "ISO2": "TG",
+      "ISO3": "TGO"
+    },
+    "TH": {
+      "ISO2": "TH",
+      "ISO3": "THA"
+    },
+    "THA": {
+      "ISO2": "TH",
+      "ISO3": "THA"
+    },
+    "THAI": {
+      "ISO2": "TH",
+      "ISO3": "THA"
+    },
+    "THAILAND": {
+      "ISO2": "TH",
+      "ISO3": "THA"
+    },
+    "THE GAMBIA": {
+      "ISO2": "GM",
+      "ISO3": "GMB"
+    },
+    "THE PHILIPPINES": {
+      "ISO2": "PH",
+      "ISO3": "PHL"
+    },
+    "THE RUSSIAN FEDERATION": {
+      "ISO2": "RU",
+      "ISO3": "RUS"
+    },
+    "THE STATE OF ERITREA": {
+      "ISO2": "ER",
+      "ISO3": "ERI"
+    },
+    "THE STATE OF PALESTINE": {
+      "ISO2": "PS",
+      "ISO3": "PSE"
+    },
+    "TIMOR-LESTE": {
+      "ISO2": "TL",
+      "ISO3": "TLS"
+    },
+    "TJ": {
+      "ISO2": "TJ",
+      "ISO3": "TJK"
+    },
+    "TJK": {
+      "ISO2": "TJ",
+      "ISO3": "TJK"
+    },
+    "TK": {
+      "ISO2": "TK",
+      "ISO3": "TKL"
+    },
+    "TKL": {
+      "ISO2": "TK",
+      "ISO3": "TKL"
+    },
+    "TKM": {
+      "ISO2": "TM",
+      "ISO3": "TKM"
+    },
+    "TL": {
+      "ISO2": "TL",
+      "ISO3": "TLS"
+    },
+    "TLS": {
+      "ISO2": "TL",
+      "ISO3": "TLS"
+    },
+    "TM": {
+      "ISO2": "TM",
+      "ISO3": "TKM"
+    },
+    "TN": {
+      "ISO2": "TN",
+      "ISO3": "TUN"
+    },
+    "TO": {
+      "ISO2": "TO",
+      "ISO3": "TON"
+    },
+    "TOGO": {
+      "ISO2": "TG",
+      "ISO3": "TGO"
+    },
+    "TOGOLESE": {
+      "ISO2": "TG",
+      "ISO3": "TGO"
+    },
+    "TOGOLESE REPUBLIC": {
+      "ISO2": "TG",
+      "ISO3": "TGO"
+    },
+    "TOKELAU": {
+      "ISO2": "TK",
+      "ISO3": "TKL"
+    },
+    "TON": {
+      "ISO2": "TO",
+      "ISO3": "TON"
+    },
+    "TONGA": {
+      "ISO2": "TO",
+      "ISO3": "TON"
+    },
+    "TONGAN": {
+      "ISO2": "TO",
+      "ISO3": "TON"
+    },
+    "TR": {
+      "ISO2": "TR",
+      "ISO3": "TUR"
+    },
+    "TRINIDAD AND TOBAGO": {
+      "ISO2": "TT",
+      "ISO3": "TTO"
+    },
+    "TRINIDADIAN OR TOBAGONIAN": {
+      "ISO2": "TT",
+      "ISO3": "TTO"
+    },
+    "TT": {
+      "ISO2": "TT",
+      "ISO3": "TTO"
+    },
+    "TTO": {
+      "ISO2": "TT",
+      "ISO3": "TTO"
+    },
+    "TUN": {
+      "ISO2": "TN",
+      "ISO3": "TUN"
+    },
+    "TUNISIA": {
+      "ISO2": "TN",
+      "ISO3": "TUN"
+    },
+    "TUNISIAN": {
+      "ISO2": "TN",
+      "ISO3": "TUN"
+    },
+    "TUR": {
+      "ISO2": "TR",
+      "ISO3": "TUR"
+    },
+    "TURKEY": {
+      "ISO2": "TR",
+      "ISO3": "TUR"
+    },
+    "TURKISH": {
+      "ISO2": "TR",
+      "ISO3": "TUR"
+    },
+    "TURKMENISTAN": {
+      "ISO2": "TM",
+      "ISO3": "TKM"
+    },
+    "TURKS AND CAICOS ISLANDS": {
+      "ISO2": "TC",
+      "ISO3": "TCA"
+    },
+    "TUV": {
+      "ISO2": "TV",
+      "ISO3": "TUV"
+    },
+    "TUVALU": {
+      "ISO2": "TV",
+      "ISO3": "TUV"
+    },
+    "TUVALUAN": {
+      "ISO2": "TV",
+      "ISO3": "TUV"
+    },
+    "TV": {
+      "ISO2": "TV",
+      "ISO3": "TUV"
+    },
+    "TW": {
+      "ISO2": "TW",
+      "ISO3": "TWN"
+    },
+    "TWN": {
+      "ISO2": "TW",
+      "ISO3": "TWN"
+    },
+    "TZ": {
+      "ISO2": "TZ",
+      "ISO3": "TZA"
+    },
+    "TZA": {
+      "ISO2": "TZ",
+      "ISO3": "TZA"
+    },
+    "UA": {
+      "ISO2": "UA",
+      "ISO3": "UKR"
+    },
+    "UG": {
+      "ISO2": "UG",
+      "ISO3": "UGA"
+    },
+    "UGA": {
+      "ISO2": "UG",
+      "ISO3": "UGA"
+    },
+    "UGANDA": {
+      "ISO2": "UG",
+      "ISO3": "UGA"
+    },
+    "UGANDAN": {
+      "ISO2": "UG",
+      "ISO3": "UGA"
+    },
+    "UK": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "UKR": {
+      "ISO2": "UA",
+      "ISO3": "UKR"
+    },
+    "UKRAINE": {
+      "ISO2": "UA",
+      "ISO3": "UKR"
+    },
+    "UKRAINIAN": {
+      "ISO2": "UA",
+      "ISO3": "UKR"
+    },
+    "UM": {
+      "ISO2": "UM",
+      "ISO3": "UMI"
+    },
+    "UMI": {
+      "ISO2": "UM",
+      "ISO3": "UMI"
+    },
+    "UNION OF THE COMOROS": {
+      "ISO2": "KM",
+      "ISO3": "COM"
+    },
+    "UNITED ARAB EMIRATES": {
+      "ISO2": "AE",
+      "ISO3": "ARE"
+    },
+    "UNITED KINGDOM": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "GREAT BRITAIN": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "UNITED MEXICAN STATES": {
+      "ISO2": "MX",
+      "ISO3": "MEX"
+    },
+    "UNITED REPUBLIC OF TANZANIA": {
+      "ISO2": "TZ",
+      "ISO3": "TZA"
+    },
+    "UNITED STATES": {
+      "ISO2": "US",
+      "ISO3": "USA"
+    },
+    "UNITED STATES MINOR OUTLYING ISLANDS": {
+      "ISO2": "UM",
+      "ISO3": "UMI"
+    },
+    "UNITED STATES OF AMERICA": {
+      "ISO2": "US",
+      "ISO3": "USA"
+    },
+    "URUGUAY": {
+      "ISO2": "UY",
+      "ISO3": "URY"
+    },
+    "URUGUAYAN": {
+      "ISO2": "UY",
+      "ISO3": "URY"
+    },
+    "URY": {
+      "ISO2": "UY",
+      "ISO3": "URY"
+    },
+    "US": {
+      "ISO2": "US",
+      "ISO3": "USA"
+    },
+    "US VIRGIN ISLANDS": {
+      "ISO2": "VI",
+      "ISO3": "VIR"
+    },
+    "USA": {
+      "ISO2": "US",
+      "ISO3": "USA"
+    },
+    "UY": {
+      "ISO2": "UY",
+      "ISO3": "URY"
+    },
+    "UZ": {
+      "ISO2": "UZ",
+      "ISO3": "UZB"
+    },
+    "UZB": {
+      "ISO2": "UZ",
+      "ISO3": "UZB"
+    },
+    "UZBEKISTAN": {
+      "ISO2": "UZ",
+      "ISO3": "UZB"
+    },
+    "UZBEKISTANI": {
+      "ISO2": "UZ",
+      "ISO3": "UZB"
+    },
+    "VA": {
+      "ISO2": "VA",
+      "ISO3": "VAT"
+    },
+    "VANUATU": {
+      "ISO2": "VU",
+      "ISO3": "VUT"
+    },
+    "VAT": {
+      "ISO2": "VA",
+      "ISO3": "VAT"
+    },
+    "VC": {
+      "ISO2": "VC",
+      "ISO3": "VCT"
+    },
+    "VCT": {
+      "ISO2": "VC",
+      "ISO3": "VCT"
+    },
+    "VE": {
+      "ISO2": "VE",
+      "ISO3": "VEN"
+    },
+    "VEN": {
+      "ISO2": "VE",
+      "ISO3": "VEN"
+    },
+    "VENEZUELA": {
+      "ISO2": "VE",
+      "ISO3": "VEN"
+    },
+    "VENEZUELA, BOLIVARIAN REPUBLIC OF": {
+      "ISO2": "VE",
+      "ISO3": "VEN"
+    },
+    "VENEZUELAN": {
+      "ISO2": "VE",
+      "ISO3": "VEN"
+    },
+    "VG": {
+      "ISO2": "VG",
+      "ISO3": "VGB"
+    },
+    "VGB": {
+      "ISO2": "VG",
+      "ISO3": "VGB"
+    },
+    "VI": {
+      "ISO2": "VI",
+      "ISO3": "VIR"
+    },
+    "VIET NAM": {
+      "ISO2": "VN",
+      "ISO3": "VNM"
+    },
+    "VIETNAM": {
+      "ISO2": "VN",
+      "ISO3": "VNM"
+    },
+    "VIETNAMESE": {
+      "ISO2": "VN",
+      "ISO3": "VNM"
+    },
+    "VIR": {
+      "ISO2": "VI",
+      "ISO3": "VIR"
+    },
+    "VIRGIN ISLANDS OF THE UNITED STATES": {
+      "ISO2": "VI",
+      "ISO3": "VIR"
+    },
+    "VIRGIN ISLANDS, BRITISH": {
+      "ISO2": "VG",
+      "ISO3": "VGB"
+    },
+    "VIRGIN ISLANDS, U.S.": {
+      "ISO2": "VI",
+      "ISO3": "VIR"
+    },
+    "VN": {
+      "ISO2": "VN",
+      "ISO3": "VNM"
+    },
+    "VNM": {
+      "ISO2": "VN",
+      "ISO3": "VNM"
+    },
+    "VU": {
+      "ISO2": "VU",
+      "ISO3": "VUT"
+    },
+    "VUT": {
+      "ISO2": "VU",
+      "ISO3": "VUT"
+    },
+    "WALLIS AND FUTUNA": {
+      "ISO2": "WF",
+      "ISO3": "WLF"
+    },
+    "WELSH": {
+      "ISO2": "GB",
+      "ISO3": "GBR"
+    },
+    "WESTERN SAHARA": {
+      "ISO2": "EH",
+      "ISO3": "ESH"
+    },
+    "WF": {
+      "ISO2": "WF",
+      "ISO3": "WLF"
+    },
+    "WLF": {
+      "ISO2": "WF",
+      "ISO3": "WLF"
+    },
+    "WS": {
+      "ISO2": "WS",
+      "ISO3": "WSM"
+    },
+    "WSM": {
+      "ISO2": "WS",
+      "ISO3": "WSM"
+    },
+    "YE": {
+      "ISO2": "YE",
+      "ISO3": "YEM"
+    },
+    "YEM": {
+      "ISO2": "YE",
+      "ISO3": "YEM"
+    },
+    "YEMEN": {
+      "ISO2": "YE",
+      "ISO3": "YEM"
+    },
+    "YEMENI": {
+      "ISO2": "YE",
+      "ISO3": "YEM"
+    },
+    "YEMENITE": {
+      "ISO2": "YE",
+      "ISO3": "YEM"
+    },
+    "YT": {
+      "ISO2": "YT",
+      "ISO3": "MYT"
+    },
+    "ZA": {
+      "ISO2": "ZA",
+      "ISO3": "ZAF"
+    },
+    "ZAF": {
+      "ISO2": "ZA",
+      "ISO3": "ZAF"
+    },
+    "ZAMBIA": {
+      "ISO2": "ZM",
+      "ISO3": "ZMB"
+    },
+    "ZAMBIAN": {
+      "ISO2": "ZM",
+      "ISO3": "ZMB"
+    },
+    "ZIMBABWE": {
+      "ISO2": "ZW",
+      "ISO3": "ZWE"
+    },
+    "ZIMBABWEAN": {
+      "ISO2": "ZW",
+      "ISO3": "ZWE"
+    },
+    "ZM": {
+      "ISO2": "ZM",
+      "ISO3": "ZMB"
+    },
+    "ZMB": {
+      "ISO2": "ZM",
+      "ISO3": "ZMB"
+    },
+    "ZW": {
+      "ISO2": "ZW",
+      "ISO3": "ZWE"
+    },
+    "ZWE": {
+      "ISO2": "ZW",
+      "ISO3": "ZWE"
+    },
+    "ÅLAND ISLANDS": {
+      "ISO2": "AX",
+      "ISO3": "ALA"
+    }
+  }
+}
