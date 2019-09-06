@@ -9,7 +9,7 @@ This project contains code and configurations that help resolve ...
 
 The [base_config_updates.json](base_config_updates.json) contain features and settings that help resolve these data sources.
 
-The [base_mapper.py](base_mapper.py) script contains code that generates these special features.  It can and is called as a library by the aforementioned higher-level mappers.   It can also be run standalone to add these special features to previously prepared json files, such as your own customer data, to help match them against these data sources.
+The [base_mapper.py](base_mapper.py) script contains code that generates these special features.  It can and is called as a library by the aforementioned higher-level mappers.   It can also be run standalone to add these special features to previously prepared json files, such as your own customer data.
 
 The [base_variants.json](base_variants.json) contains ISO code conversion tables to states and countries. Country and state codes are standardized on this mapper to improve matching.
 
@@ -60,9 +60,11 @@ Place the the following files on a directory of your choice ...
 - [base_config_updates.json](base_config_updates.json)
 
 *Note: Since the mapper-base project referenced above is required by higher level mapper projects, it is necessary to place them in a common directory structure like so ...*
+```Console
 /senzing/mappers/mapper-base         <--
 /senzing/mappers/mapper-ijic
-/senzing/mappers/mapper-dj
+/senzing/mappers/mapper-dowjones
+```
 
 ### Configuring Senzing
 
@@ -87,7 +89,7 @@ Configuration updates include:
     - **REGISTRATION_COUNTRY** Added to default configuration as key country information for an organization.
     - **GROUP_ASSN_ID** Like GROUP_ASSOCIATION_ORG_NAME, this feature and its attributes hold the DUNS number of the company for a DUN and Bradstreet principle, contact or owner.  The dow jones watch lists also contain associated duns numbers.ß
 
-- GROUP_ASSOCIATION_TYPE is defaulted to (org) so it does not have to be mapped and will be the same across data sources.
+- **GROUP_ASSOCIATION_TYPE** is defaulted to (org) so it does not have to be mapped and will be the same across data sources.
 
 - The following composite keys are added for internal use ... there codes are self-explanatory.
     - **CK_NAME_DOB_COUNTRY** 
@@ -116,6 +118,8 @@ The [base_mapper.py](base_mapper.py) contains the base_library class which conta
 
 The [base_variants.json](base_variants.json) contains the following lists ...
 
+- **BAD_VALUES** A list of bad values such as "null" will will be ignored when creating composite keys. 
+- **ATTRIBUTE_CATEGORIES** A grouping of standard attributes that will be used when creating composite keys. 
 - **ORGANIZATION_TOKENS** A dictionary of tokens that indicate a company name. 
 - **PERSON_TOKENS** A dictionary of tokens that indicate a person name.
 - **STATE_CODES** A dictionary of raw values to ISO state code.
