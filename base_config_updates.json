@@ -26,11 +26,11 @@ deleteAttribute {"attribute": "GROUP_ASSOCIATION_TYPE"}
 addAttribute {"attribute": "GROUP_ASSOCIATION_TYPE", "class": "ATTRIBUTE", "feature": "GROUP_ASSOCIATION", "element": "TYPE", "required": "No", "default": "(org)", "advanced": "No", "internal": "No"}
 
 #--additional candidate builders for name hashes
-addToNamehash {"feature": "DOB", "element": "DATE_YEAR"}
-addToNamehash {"feature": "ISO_COUNTRY", "element": "COUNTRY"}
-addToNamehash {"feature": "GROUP_ASSN_ID", "element": "ID_NUM"}
+#addToNamehash {"feature": "DOB", "element": "DATE_YEAR"}
+#addToNamehash {"feature": "ISO_COUNTRY", "element": "COUNTRY"}
+#addToNamehash {"feature": "GROUP_ASSN_ID", "element": "ID_NUM"}
 
-#--optional composite keys
+#--composite keys
 addFeature {"feature": "CK_NAME_DOB_COUNTRY", "class": "OTHER", "behavior": "FF", "anonymize": "No", "candidates": "Yes", "derived": "Yes", "standardize": "", "expression": "", "comparison": "", "elementList": [{"element": "EXPRESSION", "expressed": "No", "compared": "No"}]}
 addAttribute {"attribute": "CK_NAME_DOB_COUNTRY", "class": "OTHER", "feature": "CK_NAME_DOB_COUNTRY", "element": "EXPRESSION", "required": "Yes", "default": "", "advanced": "Yes", "internal": "Yes"}
 
@@ -48,9 +48,9 @@ addAttribute {"attribute": "CK_NAME_GROUPID", "class": "OTHER", "feature": "CK_N
 
 #--best practice for watch list screening - make name and address used for candidates
 #--caveat: minor performance impact and improvement
-setFeature {"feature": "NAME", "candidates": "Yes"}
-setFeature {"feature": "ADDRESS", "candidates": "Yes"}
-setFeature {"feature": "GROUP_ASSOCIATION", "candidates": "Yes"}
+#setFeature {"feature": "NAME", "candidates": "Yes"}
+#setFeature {"feature": "ADDRESS", "candidates": "Yes"}
+#setFeature {"feature": "GROUP_ASSOCIATION", "candidates": "Yes"}
 
 #--optional practice for watch list screening - turn off distinct names 
 #--caveat: potential for false positives as lower quality aka matches are also reported: If "Andy Jones" and "Alex Jones" both have 

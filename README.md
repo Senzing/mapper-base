@@ -44,8 +44,9 @@ if not baseLibrary.initialized:
 1. [Prerequisites](#Prerequisites)
 2. [Installation](#Installation)
 3. [Configuring Senzing](#Configuring-Senzing)
-4. [Function Library](#Base-Library-Class)
-5. [Standards Lists](#Base-Variant-Lists)
+4. [Base library class](#Base-library-class)
+5. [Base variant lists](#Base-variant-lists)
+5. [Optional ini file parameter](#Optional-ini-file-parameter)
 
 ### Prerequisites
 - python 3.6 or higher
@@ -56,6 +57,7 @@ if not baseLibrary.initialized:
 Place the the following files on a directory of your choice ...
 - [base_mapper.py](base_mapper.py) 
 - [base_variants.json](base_variants.json)
+- [base_config_updates.json](base_config_updates.json)
 
 *Note: Since the mapper-base project referenced above is required by higher level mapper projects, it is necessary to place them in a common directory structure like so ...*
 /senzing/mappers/mapper-base         <--
@@ -75,11 +77,30 @@ python3 G2ConfigTool.py <path-to-file>/base_config_updates.json
 This will step you through the process of adding the additional features, attributes and other settings needed to resolve the aforementioned data sources with your own. After each command you will see a status message saying "success" or "already exists".  For instance, if you run the script twice, the second time through they will all say "already exists" which is OK.
 
 Configuration updates include:
-- addDataSource **IJIC**
-- addEntityType **PERSON**
-- addEntityType **ORGANIZATION**
 
-### Base Library Class
+- New features and attributes for all data sources
+    - **RECORD_TYPE** An exclusive feature that prevents people from resolving to organizations. (computed by base library)
+    - **ISO_COUNTRY_CODE** All countries from other features are standardized into a list of these. (computed by base library)
+    - **DATE_OF_DEATH** Added to default configuration, only the attribute was missing.
+    - **PLACE_OF_BIRTH** Added to default configuration as contains key country information for a person.
+    - **REGISTRATION_DATE** Added to default configuration key date for an organization.
+    - **REGISTRATION_COUNTRY** Added to default configuration as key country information for an organization.
+    - **GROUP_ASSN_ID** Like GROUP_ASSOCIATION_ORG_NAME, this feature and its attributes hold the DUNS number of the company for a DUN and Bradstreet principle, contact or owner.  The dow jones watch lists also contain associated duns numbers.ß
+
+- GROUP_ASSOCIATION_TYPE is defaulted to (org) so it does not have to be mapped and will be the same across data sources.
+
+- The following composite keys are added for internal use ... there codes are self-explanatory.
+    - **CK_NAME_DOB_COUNTRY** 
+    - **CK_NAME_DOB**
+    - **CK_NAME_COUNTRY**
+    - **CK_NAME_GROUPNAME**
+    - **CK_NAME_GROUPID**
+
+*WARNING:* the following settings are commented out as they affect performance and quality. Only use them if you understand and are OK with the effects.
+- sets **NAME**, **ADDRESS** and **GROUP_ASSOCIATION** to be used for candidates. Normally just their hashes are used to find candidates.  The effect is performance is slightly degraded.
+- set **distinct** off.  Normally this is on to prevent lower strength AKAs to cause matches as only the most distinct names are considered. The effect is more potential false positives.
+
+### Base library class
 
 The [base_mapper.py](base_mapper.py) contains the base_library class which contains the following functions ...
 
@@ -89,9 +110,9 @@ The [base_mapper.py](base_mapper.py) contains the base_library class which conta
 - **isCompanyName** Uses key words to determine if a name string contains a company name rather than a person name.
 - **makeNameKey** Uses codes and logic to clean person or organization names into name keys for the purpose of finding candidate matches.
 - **attributeCategory** Used exclusively by the json updater to identify attributes used to create composite keys.
-- **jsonUpdater** Reads a json record uses the attributeCategory function to identify key attributes to standardize and use in composite keys.
+- **jsonUpdater** Reads a json record using the attributeCategory function to identify key attributes to standardize and use in composite keys.
 
-### Base Variant Lists
+### Base variant lists
 
 The [base_variants.json](base_variants.json) contains the following lists ...
 
@@ -104,5 +125,15 @@ The [base_variants.json](base_variants.json) contains the following lists ...
 - The organization and person tokens are also used by the makeNameKey function.  An empty value strips the token, while an included value replaces it.
 - These lists are meant to be extended based on data you are seeing in your data sources.  For instance ...
     - If you find a country name or code value in your data that is not contained in the country code list go ahead and add it for better matching across data sources.
-    - Different industries have different keywords in company names. You will find the word "medical" in the health care industry while the word "trust" appears often in the banking idustry.
+    - Different industries have different keywords in company names. You will find the word "medical" in the health care industry while the word "trust" appears often in the banking idustry.  Add the tokens for your industry that help identify companies.
 
+### Optional ini file parameter
+
+There is also an ini file change that can benefit watch list matching.  In the pipeline section of the main g2 ini file you use, such as the /opt/senzing/g2/python/G2Module.ini, place the following entry in the pipeline section as show below.
+
+```console
+[pipeline]
+ NAME_EFEAT_WATCHLIST_MODE=Y
+```
+
+This effectively doubles the number of name hashes created which improves the chances of finding a match at the cost of performance.  Consider creating a separate g2 ini file used just for searching and include this parameter.  If you include it during the loading of data, only have it on while loading the watch list as the load time will actually more than double! 
