@@ -13,7 +13,7 @@ The [base_mapper.py](base_mapper.py) script contains code that generates these s
 
 The [base_variants.json](base_variants.json) contains ISO code conversion tables to states and countries. Country and state codes are standardized on this mapper to improve matching.
 
-*The need for this project will eventually be replaced as its features and functionality are being incorporated into the Senzing API.*
+*Important note: The need for this project will eventually be replaced as its features and functionality are being incorporated into the Senzing API.  This project will be marked obsolete when that occurs.*
 
 Usage:
 
