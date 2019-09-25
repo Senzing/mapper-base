@@ -410,13 +410,26 @@ def pause(question='PRESS ENTER TO CONTINUE ...'):
     return response
 
 #----------------------------------------
+def signal_handler(signal, frame):
+    print('USER INTERUPT! Shutting down ... (please wait)')
+    global shutDown
+    shutDown = True
+    return
+
+#----------------------------------------
 if __name__ == "__main__":
     appPath = os.path.dirname(os.path.abspath(sys.argv[0]))
 
+    global shutDown
+    shutDown = False
+    signal.signal(signal.SIGINT, signal_handler)
+    procStartTime = time.time()
+    progressInterval = 10000
+
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('-i', '--input_file', default=os.getenv('input_file'.upper(), None), type=str, help='name of a json file to standardize.')
-    argparser.add_argument('-o', '--output_file', default=os.getenv('output_file'.upper(), None), type=str, help='name of file to write updated json output to.')
-    argparser.add_argument('-l', '--log_file', default=os.getenv('log_file'.upper(), None), type=str, help='optional statistics filename (json format).')
+    argparser.add_argument('-i', '--input_file', default=os.getenv('input_file', None), type=str, help='name of a json file to standardize.')
+    argparser.add_argument('-o', '--output_file', default=os.getenv('output_file', None), type=str, help='name of file to write updated json output to.')
+    argparser.add_argument('-l', '--log_file', default=os.getenv('log_file', None), type=str, help='optional statistics filename (json format).')
     args = argparser.parse_args()
     inputFileName = args.input_file
     outputFileName = args.output_file
@@ -446,7 +459,6 @@ if __name__ == "__main__":
                         sys.exit(1)
 
                 print('')
-                shutDown = False
                 lineCnt = 0
                 with open(inputFileName, 'r') as f:
                     for line in f:
@@ -455,7 +467,6 @@ if __name__ == "__main__":
                             jsonData = baseLibrary.jsonUpdater(line)
                             if not jsonData:
                                 shutDown = True
-                                break
 
                             if not outputFileName:
                                 print(json.dumps(jsonData, indent=4, sort_keys=True))
@@ -469,13 +480,15 @@ if __name__ == "__main__":
                                     print(' %s' % err)
                                     print('')
                                     shutDown = True
-                                    break
 
                                 if lineCnt % 1000 == 0:
                                     print('%s lines written' % lineCnt)
 
+                        if shutDown:
+                            break
+
                 if outputFileName:
-                    print('%s lines written, complete!' % lineCnt)                                    
+                    print('%s lines written, %s!' % (lineCnt, ('aborted' if shutDown else 'complete')))                                    
                     outputFileHandle.close()
 
                 #--write statistics file
@@ -485,7 +498,13 @@ if __name__ == "__main__":
                         json.dump(baseLibrary.statPack, outfile, indent=4, sort_keys = True)    
                     print('Mapping stats written to %s' % logFile)
 
-
+                print('')
+                elapsedMins = round((time.time() - procStartTime) / 60, 1)
+                if shutDown == 0:
+                    print('Process completed successfully in %s minutes!' % elapsedMins)
+                else:
+                    print('Process aborted after %s minutes!' % elapsedMins)
+                print('')
 
     sys.exit()
 

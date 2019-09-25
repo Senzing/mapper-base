@@ -752,14 +752,14 @@ class G2CmdShell(cmd.Cmd):
                 elif parmCode == 'ANONYMIZE':
                     if parmData['ANONYMIZE'].upper() in ('YES', 'Y', 'NO','N'):
                         self.cfgData['G2_CONFIG']['CFG_FTYPE'][listID]['ANONYMIZE'] = 'Yes' if parmData['ANONYMIZE'].upper() in ('YES', 'Y') else 'No'
-                        printWithNewLines('Hasing setting updated!')
+                        printWithNewLines('Anonymize setting updated!')
                         self.configUpdated = True
                     else:
-                        printWithNewLines('Invalid hashing setting: %s' % parmData['ANONYMIZE'])
+                        printWithNewLines('Invalid anonymize setting: %s' % parmData['ANONYMIZE'])
                     
                 elif parmCode == 'CANDIDATES':
                     if parmData['CANDIDATES'].upper() in ('YES', 'Y', 'NO','N'):
-                        self.cfgData['G2_CONFIG']['CFG_FTYPE'][listID]['CANDIDATES'] = 'Yes' if parmData['CANDIDATES'].upper() in ('YES', 'Y') else 'No'
+                        self.cfgData['G2_CONFIG']['CFG_FTYPE'][listID]['USED_FOR_CAND'] = 'Yes' if parmData['CANDIDATES'].upper() in ('YES', 'Y') else 'No'
                         printWithNewLines('Candidates setting updated!')
                         self.configUpdated = True
                     else:
