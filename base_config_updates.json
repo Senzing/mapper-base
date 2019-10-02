@@ -17,6 +17,9 @@ addAttribute {"attribute": "REGISTRATION_DATE", "class": "ATTRIBUTE", "feature":
 addFeature {"feature": "REGISTRATION_COUNTRY", "class": "BIO_FEATURE", "behavior": "FVM", "anonymize": "No", "candidates": "No", "standardize": "", "expression": "", "comparison": "STR_COMP", "elementList": [{"compared": "Yes", "element": "COUNTRY"}]}
 addAttribute {"attribute": "REGISTRATION_COUNTRY", "class": "ATTRIBUTE", "feature": "REGISTRATION_COUNTRY", "element": "COUNTRY", "required": "Yes"}
 
+addFeature {"feature": "AFFILIATED_COUNTRY", "class": "OTHER", "behavior": "FVM", "anonymize": "No", "candidates": "No", "standardize": "", "expression": "", "comparison": "STR_COMP", "elementList": [{"compared": "Yes", "element": "COUNTRY"}]}
+addAttribute {"attribute": "AFFILIATED_COUNTRY", "class": "ATTRIBUTE", "feature": "AFFILIATED_COUNTRY", "element": "COUNTRY", "required": "Yes"}
+
 addFeature {"feature": "GROUP_ASSN_ID", "class": "OTHER", "behavior": "FF", "anonymize": "No", "candidates": "Yes", "standardize": "", "expression": "", "comparison": "EXACT_COMP", "elementList": [{"compared": "Yes", "element": "ID_TYPE"}, {"compared": "Yes", "element": "ID_NUM"}]}
 addAttribute {"attribute": "GROUP_ASSN_ID_TYPE", "class": "ATTRIBUTE", "feature": "GROUP_ASSN_ID", "element": "ID_TYPE", "required": "Yes"}
 addAttribute {"attribute": "GROUP_ASSN_ID_NUMBER", "class": "ATTRIBUTE", "feature": "GROUP_ASSN_ID", "element": "ID_NUM", "required": "Yes"}
