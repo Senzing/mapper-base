@@ -4,6 +4,8 @@ import argparse
 import json
 import re
 from datetime import datetime
+import time
+import signal
 import random
 
 #=========================
@@ -19,37 +21,39 @@ class base_library():
             print('File %s is missing!' % mappingStandardsFile)
             print('')
             self.initialized = False
+            return
+
         try: self.mapping_standards = json.load(open(mappingStandardsFile,'r', encoding='latin-1'))
         except json.decoder.JSONDecodeError as err:
             print('')
             print('JSON error %s in %s' % (err, mappingStandardsFile))
             print('')
             self.initialized = False
-        else:
+            return
 
-            if 'ORGANIZATION_TOKENS' not in self.mapping_standards:
-                self.mapping_standards['ORGANIZATION_TOKENS'] = {}
-            if 'PERSON_TOKENS' not in self.mapping_standards:
-                self.mapping_standards['PERSON_TOKENS'] = {}
-            if 'STATE_CODES' not in self.mapping_standards:
-                self.mapping_standards['STATE_CODES'] = {}
-            if 'COUNTRY_CODES' not in self.mapping_standards:
-                self.mapping_standards['COUNTRY_CODES'] = {}
-            if 'BAD_VALUES' not in self.mapping_standards:
-                self.mapping_standards['BAD_VALUES'] = {}
+        if 'ORGANIZATION_TOKENS' not in self.mapping_standards:
+            self.mapping_standards['ORGANIZATION_TOKENS'] = {}
+        if 'PERSON_TOKENS' not in self.mapping_standards:
+            self.mapping_standards['PERSON_TOKENS'] = {}
+        if 'STATE_CODES' not in self.mapping_standards:
+            self.mapping_standards['STATE_CODES'] = {}
+        if 'COUNTRY_CODES' not in self.mapping_standards:
+            self.mapping_standards['COUNTRY_CODES'] = {}
+        if 'BAD_VALUES' not in self.mapping_standards:
+            self.mapping_standards['BAD_VALUES'] = {}
 
-            if 'ATTRIBUTE_CATEGORIES' not in self.mapping_standards:
-                self.mapping_standards['ATTRIBUTE_CATEGORIES'] = {}
-            if 'DOB' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
-                self.mapping_standards['ATTRIBUTE_CATEGORIES']['DOB'] = []
-            if 'COUNTRY' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
-                self.mapping_standards['ATTRIBUTE_CATEGORIES']['COUNTRY'] = []
-            if 'STATE' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
-                self.mapping_standards['ATTRIBUTE_CATEGORIES']['STATE'] = []
-            if 'GROUP_NAME' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
-                self.mapping_standards['ATTRIBUTE_CATEGORIES']['GROUP_NAME'] = []
-            if 'GROUP_ID' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
-                self.mapping_standards['ATTRIBUTE_CATEGORIES']['GROUP_ID'] = []
+        if 'ATTRIBUTE_CATEGORIES' not in self.mapping_standards:
+            self.mapping_standards['ATTRIBUTE_CATEGORIES'] = {}
+        if 'DOB' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
+            self.mapping_standards['ATTRIBUTE_CATEGORIES']['DOB'] = []
+        if 'COUNTRY' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
+            self.mapping_standards['ATTRIBUTE_CATEGORIES']['COUNTRY'] = []
+        if 'STATE' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
+            self.mapping_standards['ATTRIBUTE_CATEGORIES']['STATE'] = []
+        if 'GROUP_NAME' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
+            self.mapping_standards['ATTRIBUTE_CATEGORIES']['GROUP_NAME'] = []
+        if 'GROUP_ID' not in self.mapping_standards['ATTRIBUTE_CATEGORIES']:
+            self.mapping_standards['ATTRIBUTE_CATEGORIES']['GROUP_ID'] = []
 
         #--supported date formats
         self.dateFormats = []
@@ -189,7 +193,7 @@ class base_library():
 
         #--clean it up
         try: 
-            segment[attrName] = str(segment[attrName]).strip().upper()
+            segment[attrName] = str(segment[attrName]).strip() #--.upper()
             if segment[attrName] in self.mapping_standards['BAD_VALUES']:
                 self.updateStat('BAD_VALUE', segment[attrName])
                 return 'bad_Value', ''
@@ -280,7 +284,8 @@ class base_library():
             if type(jsonData[attrName]) not in (list, dict):
                 categoryValue = self.attributeCategory(jsonData, attrName)
                 if categoryValue:
-                    jsonData[attrName] = categoryValue[1]
+                    if categoryValue[0] != 'PARSED_NAME':
+                        jsonData[attrName] = categoryValue[1]
                     if categoryValue[0] not in categoryLists:
                         categoryLists[categoryValue[0]] = []
                     categoryLists[categoryValue[0]].append(categoryValue[1])
@@ -293,7 +298,8 @@ class base_library():
                     if type(jsonData[subListAttr][i][attrName]) not in (list, dict):
                         categoryValue = self.attributeCategory(jsonData[subListAttr][i], attrName)
                         if categoryValue:
-                            jsonData[subListAttr][i][attrName] = categoryValue[1]
+                            if categoryValue[0] != 'PARSED_NAME':
+                                jsonData[subListAttr][i][attrName] = categoryValue[1]
                             if categoryValue[0] not in categoryLists:
                                 categoryLists[categoryValue[0]] = []
                             categoryLists[categoryValue[0]].append(categoryValue[1])
@@ -427,9 +433,9 @@ if __name__ == "__main__":
     progressInterval = 10000
 
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('-i', '--input_file', default=os.getenv('input_file', None), type=str, help='name of a json file to standardize.')
-    argparser.add_argument('-o', '--output_file', default=os.getenv('output_file', None), type=str, help='name of file to write updated json output to.')
-    argparser.add_argument('-l', '--log_file', default=os.getenv('log_file', None), type=str, help='optional statistics filename (json format).')
+    argparser.add_argument('-i', '--input_file', default=os.getenv('input_file'.upper(), None), type=str, help='name of a json file to standardize.')
+    argparser.add_argument('-o', '--output_file', default=os.getenv('output_file'.upper(), None), type=str, help='name of file to write updated json output to.')
+    argparser.add_argument('-l', '--log_file', default=os.getenv('log_file'.upper(), None), type=str, help='optional statistics filename (json format).')
     args = argparser.parse_args()
     inputFileName = args.input_file
     outputFileName = args.output_file
@@ -440,8 +446,11 @@ if __name__ == "__main__":
     if baseLibrary.initialized:
 
         #--open input file if they gave one
-        if inputFileName:
-
+        if not inputFileName:
+            print('')
+            print('successfully initialized!')
+            print('')
+        else:
             if not os.path.exists(inputFileName):
                 print('')
                 print('File %s does not exist!' % inputFileName)

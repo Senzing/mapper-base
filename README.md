@@ -11,7 +11,7 @@ The [base_config_updates.json](base_config_updates.json) contain features and se
 
 The [base_mapper.py](base_mapper.py) script contains code that generates these special features.  It can and is called as a library by the aforementioned higher-level mappers.   It can also be run standalone to add these special features to previously prepared json files, such as your own customer data.
 
-The [base_variants.json](base_variants.json) contains ISO code conversion tables to states and countries. Country and state codes are standardized on this mapper to improve matching.
+The [base_variants.json](base_variants.json) contains ISO code conversion tables to states and countries. Country and state codes are standardized by this mapper to improve matching.
 
 *Important note: The need for this project will eventually be replaced as its features and functionality are being incorporated into the Senzing API.  This project will be marked obsolete when that occurs.*
 
@@ -19,7 +19,7 @@ Usage:
 
 For standalone use ...
 ```console
-python base_mapper.py --help
+python3 base_mapper.py --help
 usage: base_mapper.py [-h] [-i INPUT_FILE] [-o OUTPUT_FILE] [-l LOG_FILE]
 
 optional arguments:
@@ -82,7 +82,7 @@ This will step you through the process of adding the additional features, attrib
 
 Configuration updates include:
 
-- New features and attributes for all data sources
+- New features and attributes for all data sources ...
     - **RECORD_TYPE** An exclusive feature that prevents people from resolving to organizations. (computed by base library)
     - **ISO_COUNTRY_CODE** All countries from other features are standardized into a list of these. (computed by base library)
     - **DATE_OF_DEATH** Added to default configuration, only the attribute was missing.
@@ -92,6 +92,11 @@ Configuration updates include:
     - **GROUP_ASSN_ID** Like GROUP_ASSOCIATION_ORG_NAME, this feature and its attributes hold the DUNS number of the company for a DUN and Bradstreet principle, contact or owner.  The dow jones watch lists also contain associated duns numbers.ß
 
 - **GROUP_ASSOCIATION_TYPE** is defaulted to (org) so it does not have to be mapped and will be the same across data sources.
+
+- Additional **name hashes** to be generated on ...
+    - Year of birth as many watch list DOBs are incomplete
+    - Standardized country codes as many watch list entries only contain country information such as nationality
+    - Group association IDs like DUNS number
 
 - The following composite keys are added for internal use ... there codes are self-explanatory.
     - **CK_NAME_DOB_COUNTRY** 
