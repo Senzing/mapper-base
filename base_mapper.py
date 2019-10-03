@@ -433,9 +433,9 @@ if __name__ == "__main__":
     progressInterval = 10000
 
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('-i', '--input_file', default=os.getenv('input_file', None), type=str, help='name of a json file to standardize.')
-    argparser.add_argument('-o', '--output_file', default=os.getenv('output_file', None), type=str, help='name of file to write updated json output to.')
-    argparser.add_argument('-l', '--log_file', default=os.getenv('log_file', None), type=str, help='optional statistics filename (json format).')
+    argparser.add_argument('-i', '--input_file', default=os.getenv('input_file'.upper(), None), type=str, help='name of a json file to standardize.')
+    argparser.add_argument('-o', '--output_file', default=os.getenv('output_file'.upper(), None), type=str, help='name of file to write updated json output to.')
+    argparser.add_argument('-l', '--log_file', default=os.getenv('log_file'.upper(), None), type=str, help='optional statistics filename (json format).')
     args = argparser.parse_args()
     inputFileName = args.input_file
     outputFileName = args.output_file
