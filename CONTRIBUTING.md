@@ -83,7 +83,7 @@ The variables are used throughout the installation procedure.
 
 ```console
 export GIT_ACCOUNT=senzing
-export GIT_REPOSITORY=mapper-functions
+export GIT_REPOSITORY=mapper-base
 ```
 
 Synthesize environment variables.
