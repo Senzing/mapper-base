@@ -37,7 +37,7 @@ if not baseLibrary.initialized:
 ### Prerequisites
 
 - python 3.6 or higher
-- Senzing API version 1.13 or higher ()
+- Senzing API version 1.13 or higher
 
 ### Installation
 
