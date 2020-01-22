@@ -2,27 +2,6 @@
   "BAD_VALUES": {
     "NULL": ""
   },
-  "ATTRIBUTE_CATEGORIES": {
-    "DOB": [
-      "DATE_OF_BIRTH"
-    ],
-    "COUNTRY": [
-      "_COUNTRY",
-      "NATIONALITY",
-      "CITIZENSHIP",
-      "PLACE_OF_BIRTH"
-    ],
-    "STATE": [
-      "_STATE"
-    ],
-    "GROUP_NAME": [
-      "GROUP_ASSOCIATION_ORG_NAME",
-      "EMPLOYER"
-    ],
-    "GROUP_ID": [
-      "GROUP_ASSN_ID_NUMBER"
-    ]
-  },
   "ORGANIZATION_TOKENS": {
     "AND": "",
     "THE": "",
