@@ -1,0 +1,28 @@
+[pylint]
+disable=
+    bare-except,
+    consider-using-f-string,
+    consider-using-with,
+    global-at-module-level,
+    global-statement,
+    inconsistent-return-statements,
+    invalid-name,
+    line-too-long,
+    missing-class-docstring,
+    missing-function-docstring,
+    missing-module-docstring,
+    multiple-statements,
+    no-else-return,
+    no-self-use,
+    redefined-outer-name,
+    trailing-newlines,
+    trailing-whitespace,
+    unused-argument,
+    unused-import,
+    useless-return,
+good-names=
+    template-python
+ignore=
+    __init__.py,
+notes=
+    FIXME,
