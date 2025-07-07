@@ -13,11 +13,16 @@
     "GROUPID",
     "ICLA",
     "IJIC",
+    "isort",
+    "kwargs",
     "mypy",
     "pylint",
+    "pytest",
     "Senzing",
+    "setuptools",
     "shellcheck",
     "stackoverflow",
+    "venv",
     "WATCHLIST"
   ],
   "ignorePaths": [
