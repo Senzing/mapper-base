@@ -23,6 +23,8 @@
   "ignorePaths": [
     ".git/**",
     ".mypy_cache/**",
-    "base_variants.json"
+    "base_variants.json",
+    "development-requirements.txt",
+    "documentation-requirements.txt"
   ]
 }
