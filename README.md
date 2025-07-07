@@ -115,9 +115,9 @@ There is also an ini file parameter that can benefit watch list matching. Place 
 
 WARNING! This effectively doubles the number of name hashes created which improves the chances of finding a match at the cost of significant performance loss. Consider creating a separate g2 ini file used just for searching and include this parameter. If you include it during the loading of data, only have it on while loading the watch list as the load time will actually more than double!
 
-[base_config_updates.json]: base_config_updates.json
-[base_mapper.py]: base_mapper.py
-[base_variants.json]: base_variants.json
+[base_config_updates.json]: src/base_config_updates.json
+[base_mapper.py]: src/base_mapper.py
+[base_variants.json]: src/base_variants.json
 [Prerequisites]: #prerequisites
 [Installation]: #installation
 [Configuring Senzing]: #configuring-senzing
