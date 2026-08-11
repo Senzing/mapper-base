@@ -29,6 +29,7 @@
     "pytest",
     "qthelp",
     "remoteliteralinclude",
+    "reusables",
     "Senzing",
     "serializinghtml",
     "setuptools",
