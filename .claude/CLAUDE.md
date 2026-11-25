@@ -44,4 +44,4 @@ python src/base_mapper.py
 
 ## Python Version Support
 
-Python 3.10, 3.11, 3.12, and 3.13 are supported and tested in CI.
+Python 3.11, 3.12, and 3.13 are supported and tested in CI.
